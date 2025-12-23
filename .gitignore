@@ -1,0 +1,12 @@
+# IDE / Editor
+.cursor/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+.node-version
+node_modules/
