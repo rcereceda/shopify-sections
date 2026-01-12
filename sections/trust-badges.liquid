@@ -1,0 +1,423 @@
+{%- comment -%}
+  Trust Badges Section
+  
+  A flexible trust badges section that displays multiple trust indicators
+  (free shipping, secure payment, money-back guarantee, etc.) in a responsive grid.
+  
+  Features:
+  - Supports multiple badges via blocks
+  - Built-in icon library (SVG)
+  - Fully customizable colors, spacing, and layout
+  - Responsive grid (1-4 columns)
+  - No external dependencies
+{%- endcomment -%}
+
+<div class="trust-badges-section" style="
+  --section-padding-top: {{ section.settings.padding_top }}px;
+  --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  --badge-bg-color: {{ section.settings.badge_bg_color }};
+  --badge-text-color: {{ section.settings.badge_text_color }};
+  --badge-icon-color: {{ section.settings.badge_icon_color }};
+  --badge-border-radius: {{ section.settings.badge_border_radius }}px;
+  --badge-gap: {{ section.settings.badge_gap }}px;
+  --columns-mobile: {{ section.settings.columns_mobile }};
+  --columns-desktop: {{ section.settings.columns_desktop }};
+">
+  <div class="trust-badges-container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="trust-badges-heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    
+    {%- if section.blocks.size > 0 -%}
+      <div class="trust-badges-grid">
+        {%- for block in section.blocks -%}
+          <div class="trust-badge-item" {{ block.shopify_attributes }}>
+            {%- if block.settings.icon != 'none' -%}
+              <div class="trust-badge-icon">
+                {%- case block.settings.icon -%}
+                  {%- when 'shipping' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="1" y="3" width="15" height="13"></rect>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                      <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                      <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                  {%- when 'secure' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  {%- when 'guarantee' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                  {%- when 'support' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  {%- when 'quality' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  {%- when 'returns' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="1 4 1 10 7 10"></polyline>
+                      <polyline points="23 20 23 14 17 14"></polyline>
+                      <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+                    </svg>
+                  {%- when 'payment' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                      <line x1="1" y1="10" x2="23" y2="10"></line>
+                    </svg>
+                  {%- when 'eco' -%}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 8c0 3.866-3.582 7-8 7a8.841 8.841 0 0 1-1.5-.135A9.009 9.009 0 0 0 15 21c5 0 9-4 9-9 0-2.5-1-5-3-7-1 1-2 1-3 3z"></path>
+                      <path d="M3.5 17.5c2.5 0 5-2.5 5-5 0-5-2.5-7.5-5-7.5"></path>
+                    </svg>
+                {%- endcase -%}
+              </div>
+            {%- endif -%}
+            
+            <div class="trust-badge-content">
+              {%- if block.settings.title != blank -%}
+                <h3 class="trust-badge-title">{{ block.settings.title }}</h3>
+              {%- endif -%}
+              {%- if block.settings.description != blank -%}
+                <p class="trust-badge-description">{{ block.settings.description }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="trust-badges-placeholder">
+        <p>Add trust badges using the "Add block" button in the theme editor.</p>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .trust-badges-section {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+  }
+
+  .trust-badges-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .trust-badges-heading {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .trust-badges-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns-mobile), 1fr);
+    gap: var(--badge-gap);
+  }
+
+  .trust-badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 16px;
+    background-color: var(--badge-bg-color);
+    border-radius: var(--badge-border-radius);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .trust-badge-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .trust-badge-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    color: var(--badge-icon-color);
+  }
+
+  .trust-badge-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .trust-badge-content {
+    flex: 1;
+  }
+
+  .trust-badge-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+    color: var(--badge-text-color);
+  }
+
+  .trust-badge-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--badge-text-color);
+    opacity: 0.8;
+  }
+
+  .trust-badges-placeholder {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    color: #666;
+  }
+
+  /* Tablet and up */
+  @media (min-width: 768px) {
+    .trust-badges-grid {
+      grid-template-columns: repeat(var(--columns-desktop), 1fr);
+    }
+
+    .trust-badges-heading {
+      font-size: 32px;
+      margin-bottom: 48px;
+    }
+
+    .trust-badge-icon {
+      width: 56px;
+      height: 56px;
+    }
+
+    .trust-badge-title {
+      font-size: 18px;
+    }
+
+    .trust-badge-description {
+      font-size: 15px;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Trust Badges",
+  "tag": "section",
+  "class": "section-trust-badges",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Shop With Us"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "badge_gap",
+      "label": "Gap between badges",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Background color",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "badge_icon_color",
+      "label": "Icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "badge_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Trust Badge",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "shipping",
+              "label": "Free Shipping"
+            },
+            {
+              "value": "secure",
+              "label": "Secure Payment"
+            },
+            {
+              "value": "guarantee",
+              "label": "Money-Back Guarantee"
+            },
+            {
+              "value": "support",
+              "label": "24/7 Support"
+            },
+            {
+              "value": "quality",
+              "label": "Premium Quality"
+            },
+            {
+              "value": "returns",
+              "label": "Easy Returns"
+            },
+            {
+              "value": "payment",
+              "label": "Secure Payment"
+            },
+            {
+              "value": "eco",
+              "label": "Eco-Friendly"
+            }
+          ],
+          "default": "shipping"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Free Shipping"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "On orders over $50"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust Badges",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "badge",
+          "settings": {
+            "icon": "shipping",
+            "title": "Free Shipping",
+            "description": "On orders over $50"
+          }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "icon": "secure",
+            "title": "Secure Payment",
+            "description": "100% secure transactions"
+          }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "icon": "guarantee",
+            "title": "Money-Back Guarantee",
+            "description": "30-day return policy"
+          }
+        },
+        {
+          "type": "badge",
+          "settings": {
+            "icon": "support",
+            "title": "24/7 Support",
+            "description": "Dedicated customer service"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
