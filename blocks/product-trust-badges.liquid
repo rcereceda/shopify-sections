@@ -1,0 +1,520 @@
+{%- comment -%}
+  Product Trust Badges Block
+  
+  A compact, vertical list of trust indicators designed to be placed
+  within product details, typically below the "Add to Cart" button.
+  
+  Features:
+  - Vertical layout (stacked badges)
+  - Compact design for product pages
+  - 3-4 recommended badges
+  - Built-in icons
+  - Customizable colors and spacing
+  - No external dependencies
+  
+  Usage:
+  Add this block within the Product Details section, ideally below
+  the buy buttons to reduce purchase friction.
+{%- endcomment -%}
+
+<div class="product-trust-badges" style="
+  --badge-gap: {{ block.settings.badge_gap }}px;
+  --badge-text-color: {{ block.settings.text_color }};
+  --badge-icon-color: {{ block.settings.icon_color }};
+  --margin-top: {{ block.settings.margin_top }}px;
+">
+  <div class="product-trust-badges-list">
+    {%- if block.settings.badge_1_enabled -%}
+      <div class="product-trust-badge-item">
+        <div class="product-trust-badge-icon">
+          {%- case block.settings.badge_1_icon -%}
+            {%- when 'shipping' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            {%- when 'secure' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            {%- when 'guarantee' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            {%- when 'returns' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <polyline points="23 20 23 14 17 14"></polyline>
+                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+              </svg>
+            {%- when 'quality' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            {%- when 'support' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+          {%- endcase -%}
+        </div>
+        <div class="product-trust-badge-text">
+          <strong>{{ block.settings.badge_1_title }}</strong>
+          {%- if block.settings.badge_1_description != blank -%}
+            <span>{{ block.settings.badge_1_description }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.badge_2_enabled -%}
+      <div class="product-trust-badge-item">
+        <div class="product-trust-badge-icon">
+          {%- case block.settings.badge_2_icon -%}
+            {%- when 'shipping' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            {%- when 'secure' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            {%- when 'guarantee' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            {%- when 'returns' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <polyline points="23 20 23 14 17 14"></polyline>
+                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+              </svg>
+            {%- when 'quality' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            {%- when 'support' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+          {%- endcase -%}
+        </div>
+        <div class="product-trust-badge-text">
+          <strong>{{ block.settings.badge_2_title }}</strong>
+          {%- if block.settings.badge_2_description != blank -%}
+            <span>{{ block.settings.badge_2_description }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.badge_3_enabled -%}
+      <div class="product-trust-badge-item">
+        <div class="product-trust-badge-icon">
+          {%- case block.settings.badge_3_icon -%}
+            {%- when 'shipping' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            {%- when 'secure' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            {%- when 'guarantee' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            {%- when 'returns' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <polyline points="23 20 23 14 17 14"></polyline>
+                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+              </svg>
+            {%- when 'quality' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            {%- when 'support' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+          {%- endcase -%}
+        </div>
+        <div class="product-trust-badge-text">
+          <strong>{{ block.settings.badge_3_title }}</strong>
+          {%- if block.settings.badge_3_description != blank -%}
+            <span>{{ block.settings.badge_3_description }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if block.settings.badge_4_enabled -%}
+      <div class="product-trust-badge-item">
+        <div class="product-trust-badge-icon">
+          {%- case block.settings.badge_4_icon -%}
+            {%- when 'shipping' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            {%- when 'secure' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            {%- when 'guarantee' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            {%- when 'returns' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"></polyline>
+                <polyline points="23 20 23 14 17 14"></polyline>
+                <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+              </svg>
+            {%- when 'quality' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            {%- when 'support' -%}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+          {%- endcase -%}
+        </div>
+        <div class="product-trust-badge-text">
+          <strong>{{ block.settings.badge_4_title }}</strong>
+          {%- if block.settings.badge_4_description != blank -%}
+            <span>{{ block.settings.badge_4_description }}</span>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .product-trust-badges {
+    margin-top: var(--margin-top);
+  }
+
+  .product-trust-badges-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--badge-gap);
+  }
+
+  .product-trust-badge-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .product-trust-badge-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--badge-icon-color);
+  }
+
+  .product-trust-badge-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-trust-badge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: var(--badge-text-color);
+  }
+
+  .product-trust-badge-text strong {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .product-trust-badge-text span {
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Product Trust Badges",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "badge_gap",
+      "label": "Gap between badges",
+      "min": 8,
+      "max": 24,
+      "step": 4,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Badge 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "badge_1_enabled",
+      "label": "Enable badge 1",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "badge_1_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "shipping",
+          "label": "Free Shipping"
+        },
+        {
+          "value": "secure",
+          "label": "Secure Payment"
+        },
+        {
+          "value": "guarantee",
+          "label": "Money-Back Guarantee"
+        },
+        {
+          "value": "returns",
+          "label": "Easy Returns"
+        },
+        {
+          "value": "quality",
+          "label": "Premium Quality"
+        },
+        {
+          "value": "support",
+          "label": "24/7 Support"
+        }
+      ],
+      "default": "shipping"
+    },
+    {
+      "type": "text",
+      "id": "badge_1_title",
+      "label": "Title",
+      "default": "Free Shipping"
+    },
+    {
+      "type": "text",
+      "id": "badge_1_description",
+      "label": "Description",
+      "default": "On orders over $50"
+    },
+    {
+      "type": "header",
+      "content": "Badge 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "badge_2_enabled",
+      "label": "Enable badge 2",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "badge_2_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "shipping",
+          "label": "Free Shipping"
+        },
+        {
+          "value": "secure",
+          "label": "Secure Payment"
+        },
+        {
+          "value": "guarantee",
+          "label": "Money-Back Guarantee"
+        },
+        {
+          "value": "returns",
+          "label": "Easy Returns"
+        },
+        {
+          "value": "quality",
+          "label": "Premium Quality"
+        },
+        {
+          "value": "support",
+          "label": "24/7 Support"
+        }
+      ],
+      "default": "secure"
+    },
+    {
+      "type": "text",
+      "id": "badge_2_title",
+      "label": "Title",
+      "default": "Secure Checkout"
+    },
+    {
+      "type": "text",
+      "id": "badge_2_description",
+      "label": "Description",
+      "default": "SSL encrypted"
+    },
+    {
+      "type": "header",
+      "content": "Badge 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "badge_3_enabled",
+      "label": "Enable badge 3",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "badge_3_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "shipping",
+          "label": "Free Shipping"
+        },
+        {
+          "value": "secure",
+          "label": "Secure Payment"
+        },
+        {
+          "value": "guarantee",
+          "label": "Money-Back Guarantee"
+        },
+        {
+          "value": "returns",
+          "label": "Easy Returns"
+        },
+        {
+          "value": "quality",
+          "label": "Premium Quality"
+        },
+        {
+          "value": "support",
+          "label": "24/7 Support"
+        }
+      ],
+      "default": "returns"
+    },
+    {
+      "type": "text",
+      "id": "badge_3_title",
+      "label": "Title",
+      "default": "Easy Returns"
+    },
+    {
+      "type": "text",
+      "id": "badge_3_description",
+      "label": "Description",
+      "default": "30-day policy"
+    },
+    {
+      "type": "header",
+      "content": "Badge 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "badge_4_enabled",
+      "label": "Enable badge 4",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "badge_4_icon",
+      "label": "Icon",
+      "options": [
+        {
+          "value": "shipping",
+          "label": "Free Shipping"
+        },
+        {
+          "value": "secure",
+          "label": "Secure Payment"
+        },
+        {
+          "value": "guarantee",
+          "label": "Money-Back Guarantee"
+        },
+        {
+          "value": "returns",
+          "label": "Easy Returns"
+        },
+        {
+          "value": "quality",
+          "label": "Premium Quality"
+        },
+        {
+          "value": "support",
+          "label": "24/7 Support"
+        }
+      ],
+      "default": "support"
+    },
+    {
+      "type": "text",
+      "id": "badge_4_title",
+      "label": "Title",
+      "default": "24/7 Support"
+    },
+    {
+      "type": "text",
+      "id": "badge_4_description",
+      "label": "Description",
+      "default": "Always here to help"
+    }
+  ]
+}
+{% endschema %}

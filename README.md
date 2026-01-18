@@ -11,6 +11,29 @@ A collection of free, high-quality, and reusable Shopify sections designed to bo
 - **Responsive Design** - Works perfectly on all devices
 - **Performance Optimized** - Lightweight and fast-loading
 
+## 📚 Sections vs Blocks
+
+### 📦 Sections (Full-Width Components)
+
+Sections are standalone, full-width components that you add to complete pages.
+
+**Examples**: Hero banners, trust badges grid, testimonials, FAQ
+**Where**: Homepage, collection pages, landing pages
+**How to add**: Customize theme → Add section
+
+### 🧩 Blocks (Small Components)
+
+Blocks are smaller components that you add INSIDE existing sections.
+
+**Examples**: Product trust badges, countdown timers, size guides
+**Where**: Product pages (inside Product Details), cart drawer
+**How to add**: Customize theme → Open a section → Add block
+
+**Think of it this way**:
+
+- **Sections** = Full pages or major page areas
+- **Blocks** = Small pieces within those areas
+
 ## 📦 Available Sections
 
 ### 1. Trust Badges ✅
@@ -39,12 +62,50 @@ Display trust indicators to build customer confidence and increase conversions.
 
 ---
 
+---
+
+## 🧩 Available Blocks
+
+### 1. Product Trust Badges ✅
+
+Compact trust indicators for product pages, designed to reduce purchase friction.
+
+**Features:**
+
+- Vertical layout (stacked badges)
+- 4 configurable badges with enable/disable
+- 6 built-in icons (shipping, secure, guarantee, returns, quality, support)
+- Optimized for placement below "Add to Cart" button
+- Customizable colors and spacing
+
+**Use Cases:**
+
+- Product pages (below buy buttons)
+- Quick view modals
+- Cart drawer
+
+**Links:**
+
+- [📄 View Code](./blocks/product-trust-badges.liquid)
+- [📖 Full Documentation](./docs/product-trust-badges.md)
+
+---
+
 ## 🎯 Coming Soon
+
+**Sections:**
 
 - **Hero Banner** - Full-width hero section with image/video background
 - **Testimonials** - Customer reviews and social proof
 - **FAQ Accordion** - Collapsible frequently asked questions
 - **Feature Grid** - Showcase product features and benefits
+
+**Blocks:**
+
+- **Countdown Timer** - Create urgency with time-limited offers
+- **Size Guide** - Help customers choose the right size
+- **Stock Indicator** - Show remaining inventory
+- **Shipping Calculator** - Estimate delivery costs
 
 ---
 
