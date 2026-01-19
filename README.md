@@ -17,17 +17,46 @@ Sections are modular, reusable components that you can add to any page in your S
 
 ## 📦 Available Sections
 
-### 1. Trust Badges ✅
+### 1. Hero Banner ✅
+
+Full-width hero section with image or video background, perfect for making a strong first impression.
+
+**Features:**
+
+- Image or video background support
+- Customizable overlay (color + opacity)
+- Flexible content positioning (9 position combinations)
+- Eyebrow text, heading, subheading
+- Up to 2 CTA buttons (primary + secondary)
+- Dynamic trust badges via blocks (unlimited, drag & drop reorderable)
+- Heroicons for badges
+- Fully responsive with separate mobile/desktop heights
+
+**Use Cases:**
+
+- Homepage hero
+- Landing pages
+- Campaign pages
+- Product launches
+
+**Links:**
+
+- [📄 View Code](./sections/hero-banner.liquid)
+- [📖 Full Documentation](./docs/hero-banner.md)
+
+---
+
+### 2. Trust Badges ✅
 
 Display trust indicators to build customer confidence and increase conversions.
 
 **Features:**
 
 - Multiple badge support via blocks
-- 8 built-in SVG icons (shipping, secure payment, guarantee, support, quality, returns, payment, eco-friendly)
+- 6 professional Heroicons (free shipping, money-back guarantee, 24/7 support, premium quality, easy returns, eco-friendly)
 - Responsive grid layout (1-4 columns)
 - Customizable colors, spacing, and border radius
-- Hover effects
+- Smooth hover effects
 
 **Use Cases:**
 
@@ -45,10 +74,10 @@ Display trust indicators to build customer confidence and increase conversions.
 
 ## 🎯 Coming Soon
 
-- **Hero Banner** - Full-width hero section with image/video background
 - **Testimonials** - Customer reviews and social proof
 - **FAQ Accordion** - Collapsible frequently asked questions
 - **Feature Grid** - Showcase product features and benefits
+- **Featured Products** - Highlight bestsellers and new arrivals
 
 ---
 
@@ -142,14 +171,15 @@ Need help? Have questions?
 
 ## 🎯 Roadmap
 
-- [ ] Hero Banner section
+- [x] Hero Banner section ✅
+- [x] Trust Badges section ✅
 - [ ] Testimonials section
 - [ ] FAQ Accordion section
 - [ ] Feature Grid section
+- [ ] Featured Products section
 - [ ] Announcement Bar section
 - [ ] Newsletter Signup section
 - [ ] Image Gallery section
-- [ ] Product Showcase section
 
 ---
 
