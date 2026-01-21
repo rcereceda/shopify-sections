@@ -136,9 +136,36 @@ Showcase customer reviews and build social proof with beautiful testimonial card
 
 ---
 
-## 🎯 Coming Soon
+### 5. FAQ Accordion ✅
 
-- **FAQ Accordion** - Collapsible frequently asked questions
+Display frequently asked questions with smooth collapsible answers to reduce support inquiries.
+
+**Features:**
+
+- Up to 20 FAQ items via blocks
+- Smooth expand/collapse animations
+- 3 icon styles (Plus/Minus, Chevron, Arrow)
+- Icon rotation on expand
+- Rich text support in answers
+- Auto-open first item option
+- Single or multiple items open mode
+- SEO-friendly Schema.org markup
+- Fully customizable colors, spacing, and typography
+- Hover effects on items
+- Keyboard accessible
+
+**Use Cases:**
+
+- Product pages
+- Homepage
+- Support/Help pages
+- Landing pages
+- Footer sections
+
+**Links:**
+
+- [📄 View Code](./sections/faq-accordion.liquid)
+- [📖 Full Documentation](./docs/faq-accordion.md)
 
 ---
 
@@ -235,15 +262,20 @@ Need help? Have questions?
 
 ## 🎯 Roadmap
 
+### MVP Complete! 🎉
 - [x] Hero Banner section ✅
 - [x] Trust Badges section ✅
 - [x] Featured Products section ✅
 - [x] Testimonials section ✅
-- [ ] FAQ Accordion section
+- [x] FAQ Accordion section ✅
+
+### Future Sections
 - [ ] Feature Grid section
 - [ ] Announcement Bar section
 - [ ] Newsletter Signup section
 - [ ] Image Gallery section
+- [ ] Countdown Timer section
+- [ ] Before/After Slider section
 
 ---
 
