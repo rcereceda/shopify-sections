@@ -105,9 +105,39 @@ Showcase your best products in a beautiful, responsive grid with full Shopify in
 
 ---
 
+### 4. Testimonials ✅
+
+Showcase customer reviews and build social proof with beautiful testimonial cards.
+
+**Features:**
+
+- Up to 12 testimonials via blocks
+- Star rating system (1-5 stars)
+- Customer photos with circular or square display
+- Customer name and role/company display
+- Optional quote icon
+- Responsive grid (1 mobile, up to 3 desktop columns)
+- Smooth hover effects with card elevation
+- Fully customizable colors, spacing, and typography
+- Placeholder support for missing photos
+
+**Use Cases:**
+
+- Homepage social proof
+- Product pages
+- About page
+- Landing pages
+- After checkout confirmation
+
+**Links:**
+
+- [📄 View Code](./sections/testimonials.liquid)
+- [📖 Full Documentation](./docs/testimonials.md)
+
+---
+
 ## 🎯 Coming Soon
 
-- **Testimonials** - Customer reviews and social proof
 - **FAQ Accordion** - Collapsible frequently asked questions
 
 ---
@@ -168,11 +198,14 @@ _(Demo store uses the Horizon theme)_
 
 ## 💡 Tips for Best Results
 
-1. **Trust Badges**: Place them on your homepage, product pages, and near checkout buttons
-2. **Keep it Simple**: Don't overload pages with too many sections
-3. **Test on Mobile**: Always preview on mobile devices
-4. **Match Your Brand**: Customize colors to match your store's design
-5. **Use High-Quality Content**: Good copy and images make a huge difference
+1. **Hero Banner**: Use high-quality images/videos and clear CTAs for maximum impact
+2. **Trust Badges**: Place them on your homepage, product pages, and near checkout buttons
+3. **Featured Products**: Showcase bestsellers or new arrivals with compelling product images
+4. **Testimonials**: Use real customer photos and authentic reviews for credibility
+5. **Keep it Simple**: Don't overload pages with too many sections
+6. **Test on Mobile**: Always preview on mobile devices
+7. **Match Your Brand**: Customize colors to match your store's design
+8. **Use High-Quality Content**: Good copy and images make a huge difference
 
 ---
 
@@ -204,10 +237,10 @@ Need help? Have questions?
 
 - [x] Hero Banner section ✅
 - [x] Trust Badges section ✅
-- [ ] Testimonials section
+- [x] Featured Products section ✅
+- [x] Testimonials section ✅
 - [ ] FAQ Accordion section
 - [ ] Feature Grid section
-- [ ] Featured Products section
 - [ ] Announcement Bar section
 - [ ] Newsletter Signup section
 - [ ] Image Gallery section
