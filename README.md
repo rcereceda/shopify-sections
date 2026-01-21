@@ -72,12 +72,43 @@ Display trust indicators to build customer confidence and increase conversions.
 
 ---
 
+### 3. Featured Products ✅
+
+Showcase your best products in a beautiful, responsive grid with full Shopify integration.
+
+**Features:**
+
+- Pull products from any Shopify collection
+- Flexible product limit (2-12 products)
+- Responsive grid (1-2 mobile, 2-4 desktop columns)
+- Automatic sale badges with discount percentage
+- Product cards with image, title, price, and CTA button
+- Compare at price display for sales
+- Optional vendor and description display
+- Customizable card styling (border, radius, padding)
+- Image aspect ratio control (square, portrait, landscape)
+- "View All" button linking to full collection
+- Lazy loading and responsive images for performance
+
+**Use Cases:**
+
+- Homepage bestsellers
+- New arrivals showcase
+- Seasonal collections
+- Category landing pages
+- Product recommendations
+
+**Links:**
+
+- [📄 View Code](./sections/featured-products.liquid)
+- [📖 Full Documentation](./docs/featured-products.md)
+
+---
+
 ## 🎯 Coming Soon
 
 - **Testimonials** - Customer reviews and social proof
 - **FAQ Accordion** - Collapsible frequently asked questions
-- **Feature Grid** - Showcase product features and benefits
-- **Featured Products** - Highlight bestsellers and new arrivals
 
 ---
 
