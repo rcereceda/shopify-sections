@@ -2,7 +2,17 @@
 
 A collection of free, high-quality, and reusable Shopify sections designed to boost conversions and enhance your store's design.
 
-## 🚀 Features
+## 🚀 Live Demo
+
+**See all sections in action:**
+
+**[View Demo Store →](https://sections-lab-2.myshopify.com)** | Password: `shopify`
+
+> Preview all 5 sections running on a live Shopify store with the Horizon theme.
+
+---
+
+## ✨ Features
 
 - **100% Free & Open Source** - No hidden costs, no subscriptions
 - **Copy & Paste Ready** - Just copy the code and paste it into your theme editor
@@ -24,6 +34,7 @@ Full-width hero section with image or video background, perfect for making a str
 **Features:**
 
 - Image or video background support
+- **Parallax effects**: Scroll-based parallax + ambient movement animation
 - Customizable overlay (color + opacity)
 - Flexible content positioning (9 position combinations)
 - Eyebrow text, heading, subheading
@@ -31,6 +42,7 @@ Full-width hero section with image or video background, perfect for making a str
 - Dynamic trust badges via blocks (unlimited, drag & drop reorderable)
 - Heroicons for badges
 - Fully responsive with separate mobile/desktop heights
+- Accessibility-friendly (respects motion preferences)
 
 **Use Cases:**
 
