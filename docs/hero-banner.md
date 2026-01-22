@@ -12,6 +12,12 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
   - Automatic fallback to image if video not provided
   - Placeholder if no media selected
   
+- **Image Effects**:
+  - **Parallax on scroll**: Creates depth effect as you scroll
+  - **Ambient movement**: Subtle circular motion when idle
+  - Both effects can be enabled/disabled independently
+  - Respects user's motion preferences (accessibility)
+
 - **Professional Design** (Heroicons):
   - Clean, modern Heroicons for mini badges
   - Consistent with Trust Badges section
@@ -52,6 +58,19 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
 - Or use a CDN URL (your own hosting, Vimeo direct link, etc.)
 - Shopify doesn't support uploading videos directly to theme assets (they're too large)
 - MP4 format with H.264 codec recommended, keep under 10MB for performance
+
+### Image Effects
+
+| Setting                      | Type     | Default | Description                                           |
+| ---------------------------- | -------- | ------- | ----------------------------------------------------- |
+| **Enable Parallax on Scroll**| Checkbox | Off     | Creates depth effect as you scroll (works best with images) |
+| **Enable Ambient Movement**  | Checkbox | Off     | Adds subtle circular motion to the image when idle    |
+
+**Effect Notes:**
+- **Parallax**: The image stays fixed while you scroll, creating a depth illusion. Best for hero sections at the top of the page.
+- **Ambient Movement**: A gentle 30-second circular animation that adds life to static images. Subtle and professional. **Only applies to images, not videos** (videos already have motion).
+- Both effects work together or independently
+- Effects are automatically disabled for users who prefer reduced motion (accessibility)
 
 ### Overlay Settings
 
@@ -152,6 +171,10 @@ Media:
 - Video: (Optional) Product in use
 - Overlay: #000000, 50% opacity
 
+Effects:
+- Parallax on Scroll: ✓ Enabled
+- Ambient Movement: ✗ Disabled
+
 Content:
 - Eyebrow: "NEW ARRIVAL"
 - Heading: "Premium Quality Products"
@@ -181,6 +204,10 @@ Media:
 - Background Image: Model wearing new collection
 - Overlay: #1a1a1a, 30% opacity
 
+Effects:
+- Parallax on Scroll: ✓ Enabled
+- Ambient Movement: ✓ Enabled (adds subtle life to the image)
+
 Content:
 - Eyebrow: "SPRING 2026"
 - Heading: "New Collection Drops"
@@ -209,6 +236,10 @@ Layout:
 Media:
 - Background Image: Product hero shot
 - Overlay: #0066cc, 60% opacity
+
+Effects:
+- Parallax on Scroll: ✗ Disabled
+- Ambient Movement: ✓ Enabled (subtle product showcase)
 
 Content:
 - Eyebrow: "INTRODUCING"
@@ -246,6 +277,25 @@ Layout:
 4. **Video Format**: MP4, H.264 codec, max 10MB for fast loading
 5. **Video Length**: 10-30 seconds loop works best
 6. **Compression**: Optimize images/videos before uploading
+
+### Effect Guidelines
+
+1. **Parallax on Scroll**:
+   - ✅ Best for: Hero sections at the top of the page
+   - ✅ Works great with: High-quality lifestyle images
+   - ⚠️ Avoid with: Videos (can cause performance issues)
+   - 💡 Tip: Combine with a darker overlay for better text contrast
+
+2. **Ambient Movement**:
+   - ✅ Best for: Static images that need subtle life
+   - ✅ Works great with: Product shots, lifestyle photos
+   - ⚠️ **Not applied to videos**: Videos already have motion, so ambient movement is automatically disabled when using video backgrounds
+   - 💡 Tip: The effect is very subtle - that's intentional for professionalism
+
+3. **Combining Both Effects**:
+   - Creates a premium, modern feel
+   - Best for fashion, lifestyle, and luxury brands
+   - Test on mobile to ensure smooth performance
 
 ### Content Tips
 
@@ -357,6 +407,30 @@ Height: 600px
 
 - **Solution**: Use recommended dimensions (1920x800px) and ensure image is high quality.
 
+**Issue**: Parallax effect not working
+
+- **Solution**:
+  - Make sure "Enable parallax on scroll" is checked
+  - Parallax works best with images, not videos
+  - Try scrolling the page to see the effect
+  - Check that the hero section is at the top of the page
+
+**Issue**: Ambient movement is too subtle / not visible
+
+- **Solution**:
+  - The effect is intentionally subtle (30-second loop)
+  - Wait a few seconds to see the gentle circular motion
+  - The effect scales the image to 1.2x, so ensure your image has enough space
+  - Effect is disabled for users with motion sensitivity preferences
+
+**Issue**: Effects causing performance issues
+
+- **Solution**:
+  - Disable ambient movement on mobile if needed
+  - Optimize image file size (compress before uploading)
+  - Avoid using parallax with video backgrounds
+  - Test on different devices and browsers
+
 ## 📱 Responsive Behavior
 
 ### Mobile (< 768px)
@@ -377,9 +451,11 @@ Height: 600px
 
 - **No External Dependencies**: All icons are inline SVG (Heroicons)
 - **Optimized Media**: Uses Shopify's image CDN with responsive srcset
-- **Minimal CSS**: ~3KB of styles
-- **No JavaScript**: Pure CSS animations
+- **Minimal CSS**: ~4KB of styles (including parallax effects)
+- **No JavaScript**: Pure CSS animations for all effects
 - **Fast Loading**: Lazy loading for images, optimized video delivery
+- **Accessibility**: Respects `prefers-reduced-motion` for users with motion sensitivity
+- **GPU Accelerated**: Parallax and ambient effects use CSS transforms for smooth performance
 
 ## 🎨 Color Schemes
 

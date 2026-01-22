@@ -33,13 +33,14 @@
 ">
   <div class="hero-banner-container hero-height-{{ section.settings.height_desktop }}">
     {%- comment -%} Background Media {%- endcomment -%}
-    <div class="hero-banner-media">
+    <div class="hero-banner-media{% if section.settings.enable_parallax_scroll %} hero-parallax-scroll{% endif %}">
       {%- if section.settings.video != blank -%}
         {%- comment -%}
           Video Background
           Note: Videos use external URLs (RemoteAsset warning is expected).
           Shopify doesn't support video uploads to Assets due to file size.
           Users should upload to Shopify Files or use CDN URLs.
+          Ambient movement is NOT applied to videos (they already have motion).
         {%- endcomment -%}
         <video
           class="hero-banner-video"
@@ -75,7 +76,7 @@
           width="{{ section.settings.image.width }}"
           height="{{ section.settings.image.height }}"
           alt="{{ section.settings.heading | escape }}"
-          class="hero-banner-image"
+          class="hero-banner-image{% if section.settings.enable_ambient_movement %} hero-ambient-animation{% endif %}"
           loading="lazy"
         >
       {%- else -%}
@@ -204,12 +205,50 @@
     z-index: 1;
   }
 
+  /* Parallax Scroll Effect - Creates depth by fixing image position */
+  .hero-parallax-scroll {
+    clip-path: inset(0);
+  }
+
+  .hero-parallax-scroll .hero-banner-video,
+  .hero-parallax-scroll .hero-banner-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
   .hero-banner-video,
   .hero-banner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  /* Ambient Movement Effect - Subtle circular motion */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-ambient-animation {
+      animation: heroAmbientMovement 30s linear infinite;
+    }
+
+    @keyframes heroAmbientMovement {
+      0% {
+        transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2);
+      }
+    }
+  }
+
+  /* Disable animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .hero-ambient-animation {
+      animation: none;
+      transform: scale(1.05);
+    }
   }
 
   .hero-banner-placeholder {
@@ -478,6 +517,24 @@
       "id": "video",
       "label": "Video URL (optional)",
       "info": "MP4 format recommended. Leave empty to use image only."
+    },
+    {
+      "type": "header",
+      "content": "Image Effects"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_parallax_scroll",
+      "label": "Enable parallax on scroll",
+      "info": "Creates depth effect as you scroll. Works best with images.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_ambient_movement",
+      "label": "Enable ambient movement",
+      "info": "Adds subtle circular motion to the image when idle.",
+      "default": false
     },
     {
       "type": "header",
