@@ -97,9 +97,13 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
 | **Button 2 Label**  | Text | "Learn More" | Secondary button text    |
 | **Button 2 Link**   | URL  | -            | Secondary button URL     |
 
-### Mini Trust Badges (Blocks)
+### Social Proof Blocks
 
-Trust badges are added as **dynamic blocks** that can be added, removed, and reordered via drag & drop.
+The Hero Banner supports **two types of blocks** for social proof:
+
+#### 1. Trust Badges (Unlimited)
+
+Mini trust indicators displayed horizontally.
 
 **To add a badge:**
 1. In the theme customizer, click "Add block"
@@ -111,15 +115,35 @@ Trust badges are added as **dynamic blocks** that can be added, removed, and reo
 
 | Setting   | Type   | Default         | Description           |
 | --------- | ------ | --------------- | --------------------- |
-| **Icon**  | Select | Check           | Badge icon            |
+| **Icon**  | Select | Shipping        | Badge icon            |
 | **Text**  | Text   | "Free Shipping" | Badge text            |
 
 **Available Icons**: None, Free Shipping, Money-Back Guarantee, 24/7 Support, Premium Quality, Easy Returns
 
+#### 2. Featured Testimonial (Limit: 1)
+
+A highlighted customer review with stars, quote, photo, and name.
+
+**To add a testimonial:**
+1. In the theme customizer, click "Add block"
+2. Select "Featured Testimonial"
+3. Configure rating, quote, photo, and customer info
+
+**Block Settings:**
+
+| Setting               | Type         | Default                | Description                      |
+| --------------------- | ------------ | ---------------------- | -------------------------------- |
+| **Star Rating**       | Range (0-5)  | 5                      | Number of stars (0 to hide)      |
+| **Testimonial Quote** | Textarea     | (sample text)          | Customer review text             |
+| **Customer Photo**    | Image Picker | -                      | Customer profile image           |
+| **Customer Name**     | Text         | "Sarah Johnson"        | Customer's name                  |
+| **Customer Title**    | Text         | "Verified Buyer"       | Title or company                 |
+
 **Benefits of blocks:**
-- ✅ Add unlimited badges
+- ✅ Choose between badges, testimonial, or both
+- ✅ Add unlimited badges + 1 featured testimonial
 - ✅ Reorder with drag & drop
-- ✅ Remove badges easily
+- ✅ Remove blocks easily
 - ✅ No code changes needed
 
 ### Layout Settings

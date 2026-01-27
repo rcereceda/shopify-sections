@@ -6,7 +6,7 @@ A collection of free, high-quality, and reusable Shopify sections designed to bo
 
 **See all sections in action:**
 
-**[View Demo Store →](https://sections-lab-2.myshopify.com)** | Password: `shopify`
+**[View Demo Store →](https://atomic-sections.myshopify.com)** | Password: `shopify`
 
 > Preview all 5 sections running on a live Shopify store with the Horizon theme.
 
@@ -39,7 +39,9 @@ Full-width hero section with image or video background, perfect for making a str
 - Flexible content positioning (9 position combinations)
 - Eyebrow text, heading, subheading
 - Up to 2 CTA buttons (primary + secondary)
+- **Social proof blocks**: Trust badges OR featured testimonial (or both)
 - Dynamic trust badges via blocks (unlimited, drag & drop reorderable)
+- Featured testimonial block with stars, quote, photo, and customer info (limit: 1)
 - Heroicons for badges
 - Fully responsive with separate mobile/desktop heights
 - Accessibility-friendly (respects motion preferences)
@@ -227,14 +229,6 @@ Each section includes settings for:
 
 ---
 
-## 🌐 Demo
-
-See these sections in action: [sections-lab-2.myshopify.com](https://sections-lab-2.myshopify.com)
-
-_(Demo store uses the Horizon theme)_
-
----
-
 ## 💡 Tips for Best Results
 
 1. **Hero Banner**: Use high-quality images/videos and clear CTAs for maximum impact
@@ -275,6 +269,7 @@ Need help? Have questions?
 ## 🎯 Roadmap
 
 ### MVP Complete! 🎉
+
 - [x] Hero Banner section ✅
 - [x] Trust Badges section ✅
 - [x] Featured Products section ✅
@@ -282,6 +277,7 @@ Need help? Have questions?
 - [x] FAQ Accordion section ✅
 
 ### Future Sections
+
 - [ ] Feature Grid section
 - [ ] Announcement Bar section
 - [ ] Newsletter Signup section
