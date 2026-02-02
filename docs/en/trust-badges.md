@@ -1,5 +1,7 @@
 # Trust Badges Section - Usage Guide
 
+🇺🇸 English | [🇪🇸 Leer en español](../es/trust-badges.md)
+
 ## 📋 Overview
 
 The Trust Badges section displays multiple trust indicators in a responsive grid to build customer confidence and increase conversions.

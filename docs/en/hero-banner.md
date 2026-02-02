@@ -1,5 +1,7 @@
 # Hero Banner Section - Usage Guide
 
+🇺🇸 English | [🇪🇸 Leer en español](../es/hero-banner.md)
+
 ## 📋 Overview
 
 The Hero Banner section is a full-width, high-impact section perfect for homepages, landing pages, and campaign pages. It supports both image and video backgrounds with customizable overlays and flexible content positioning.
@@ -11,8 +13,8 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
   - Video background (MP4 format, optional)
   - Automatic fallback to image if video not provided
   - Placeholder if no media selected
-  
 - **Image Effects**:
+
   - **Parallax on scroll**: Creates depth effect as you scroll
   - **Ambient movement**: Subtle circular motion when idle
   - Both effects can be enabled/disabled independently
@@ -21,14 +23,12 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
 - **Professional Design** (Heroicons):
   - Clean, modern Heroicons for mini badges
   - Consistent with Trust Badges section
-  
 - **Content Elements**:
   - Eyebrow text (small text above heading)
   - Main heading (H1)
   - Subheading/description (richtext)
   - Up to 2 CTA buttons (primary + secondary)
   - Dynamic mini trust badges (unlimited via blocks)
-  
 - **Full Customization**:
   - Overlay color and opacity control
   - Text color customization
@@ -37,7 +37,6 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
   - Text alignment (left/center/right)
   - Content max-width control
   - Height control (mobile + desktop)
-  
 - **Responsive Design**:
   - Optimized for all screen sizes
   - Separate height controls for mobile and desktop
@@ -54,6 +53,7 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
 | **Video URL**        | URL   | Optional MP4 video URL (see note below)        |
 
 **Video URL Note:**
+
 - Upload your video to **Shopify Files** (Settings → Files), then copy the generated URL
 - Or use a CDN URL (your own hosting, Vimeo direct link, etc.)
 - Shopify doesn't support uploading videos directly to theme assets (they're too large)
@@ -61,12 +61,13 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
 
 ### Image Effects
 
-| Setting                      | Type     | Default | Description                                           |
-| ---------------------------- | -------- | ------- | ----------------------------------------------------- |
-| **Enable Parallax on Scroll**| Checkbox | Off     | Creates depth effect as you scroll (works best with images) |
-| **Enable Ambient Movement**  | Checkbox | Off     | Adds subtle circular motion to the image when idle    |
+| Setting                       | Type     | Default | Description                                                 |
+| ----------------------------- | -------- | ------- | ----------------------------------------------------------- |
+| **Enable Parallax on Scroll** | Checkbox | Off     | Creates depth effect as you scroll (works best with images) |
+| **Enable Ambient Movement**   | Checkbox | Off     | Adds subtle circular motion to the image when idle          |
 
 **Effect Notes:**
+
 - **Parallax**: The image stays fixed while you scroll, creating a depth illusion. Best for hero sections at the top of the page.
 - **Ambient Movement**: A gentle 30-second circular animation that adds life to static images. Subtle and professional. **Only applies to images, not videos** (videos already have motion).
 - Both effects work together or independently
@@ -74,28 +75,28 @@ The Hero Banner section is a full-width, high-impact section perfect for homepag
 
 ### Overlay Settings
 
-| Setting            | Type  | Default  | Description                     |
-| ------------------ | ----- | -------- | ------------------------------- |
-| **Overlay Color**  | Color | #000000  | Color of the overlay            |
-| **Overlay Opacity**| Range | 40%      | Opacity of overlay (0-80%)      |
+| Setting             | Type  | Default | Description                |
+| ------------------- | ----- | ------- | -------------------------- |
+| **Overlay Color**   | Color | #000000 | Color of the overlay       |
+| **Overlay Opacity** | Range | 40%     | Opacity of overlay (0-80%) |
 
 ### Content Settings
 
-| Setting       | Type     | Default                   | Description                  |
-| ------------- | -------- | ------------------------- | ---------------------------- |
-| **Eyebrow**   | Text     | "New Collection"          | Small text above heading     |
-| **Heading**   | Text     | "Welcome to Our Store"    | Main heading (H1)            |
-| **Subheading**| Richtext | "Discover our latest..."  | Description text             |
-| **Text Color**| Color    | #ffffff                   | Color of all text elements   |
+| Setting        | Type     | Default                  | Description                |
+| -------------- | -------- | ------------------------ | -------------------------- |
+| **Eyebrow**    | Text     | "New Collection"         | Small text above heading   |
+| **Heading**    | Text     | "Welcome to Our Store"   | Main heading (H1)          |
+| **Subheading** | Richtext | "Discover our latest..." | Description text           |
+| **Text Color** | Color    | #ffffff                  | Color of all text elements |
 
 ### Button Settings
 
-| Setting             | Type | Default      | Description              |
-| ------------------- | ---- | ------------ | ------------------------ |
-| **Button 1 Label**  | Text | "Shop Now"   | Primary button text      |
-| **Button 1 Link**   | URL  | -            | Primary button URL       |
-| **Button 2 Label**  | Text | "Learn More" | Secondary button text    |
-| **Button 2 Link**   | URL  | -            | Secondary button URL     |
+| Setting            | Type | Default      | Description           |
+| ------------------ | ---- | ------------ | --------------------- |
+| **Button 1 Label** | Text | "Shop Now"   | Primary button text   |
+| **Button 1 Link**  | URL  | -            | Primary button URL    |
+| **Button 2 Label** | Text | "Learn More" | Secondary button text |
+| **Button 2 Link**  | URL  | -            | Secondary button URL  |
 
 ### Social Proof Blocks
 
@@ -106,6 +107,7 @@ The Hero Banner supports **two types of blocks** for social proof:
 Mini trust indicators displayed horizontally.
 
 **To add a badge:**
+
 1. In the theme customizer, click "Add block"
 2. Select "Trust Badge"
 3. Configure icon and text
@@ -113,10 +115,10 @@ Mini trust indicators displayed horizontally.
 
 **Block Settings:**
 
-| Setting   | Type   | Default         | Description           |
-| --------- | ------ | --------------- | --------------------- |
-| **Icon**  | Select | Shipping        | Badge icon            |
-| **Text**  | Text   | "Free Shipping" | Badge text            |
+| Setting  | Type   | Default         | Description |
+| -------- | ------ | --------------- | ----------- |
+| **Icon** | Select | Shipping        | Badge icon  |
+| **Text** | Text   | "Free Shipping" | Badge text  |
 
 **Available Icons**: None, Free Shipping, Money-Back Guarantee, 24/7 Support, Premium Quality, Easy Returns
 
@@ -125,21 +127,23 @@ Mini trust indicators displayed horizontally.
 A highlighted customer review with stars, quote, photo, and name.
 
 **To add a testimonial:**
+
 1. In the theme customizer, click "Add block"
 2. Select "Featured Testimonial"
 3. Configure rating, quote, photo, and customer info
 
 **Block Settings:**
 
-| Setting               | Type         | Default                | Description                      |
-| --------------------- | ------------ | ---------------------- | -------------------------------- |
-| **Star Rating**       | Range (0-5)  | 5                      | Number of stars (0 to hide)      |
-| **Testimonial Quote** | Textarea     | (sample text)          | Customer review text             |
-| **Customer Photo**    | Image Picker | -                      | Customer profile image           |
-| **Customer Name**     | Text         | "Sarah Johnson"        | Customer's name                  |
-| **Customer Title**    | Text         | "Verified Buyer"       | Title or company                 |
+| Setting               | Type         | Default          | Description                 |
+| --------------------- | ------------ | ---------------- | --------------------------- |
+| **Star Rating**       | Range (0-5)  | 5                | Number of stars (0 to hide) |
+| **Testimonial Quote** | Textarea     | (sample text)    | Customer review text        |
+| **Customer Photo**    | Image Picker | -                | Customer profile image      |
+| **Customer Name**     | Text         | "Sarah Johnson"  | Customer's name             |
+| **Customer Title**    | Text         | "Verified Buyer" | Title or company            |
 
 **Benefits of blocks:**
+
 - ✅ Choose between badges, testimonial, or both
 - ✅ Add unlimited badges + 1 featured testimonial
 - ✅ Reorder with drag & drop
@@ -148,14 +152,14 @@ A highlighted customer review with stars, quote, photo, and name.
 
 ### Layout Settings
 
-| Setting                    | Type  | Default | Description                      |
-| -------------------------- | ----- | ------- | -------------------------------- |
-| **Vertical Position**      | Select| Center  | Top, Center, or Bottom           |
-| **Horizontal Position**    | Select| Center  | Left, Center, or Right           |
-| **Text Alignment**         | Select| Center  | Left, Center, or Right           |
-| **Content Max Width**      | Range | 700px   | Maximum width of content (400-1000px) |
-| **Height (Mobile)**        | Range | 500px   | Section height on mobile (400-700px)  |
-| **Height (Desktop)**       | Range | 650px   | Section height on desktop (400-900px) |
+| Setting                 | Type   | Default | Description                           |
+| ----------------------- | ------ | ------- | ------------------------------------- |
+| **Vertical Position**   | Select | Center  | Top, Center, or Bottom                |
+| **Horizontal Position** | Select | Center  | Left, Center, or Right                |
+| **Text Alignment**      | Select | Center  | Left, Center, or Right                |
+| **Content Max Width**   | Range  | 700px   | Maximum width of content (400-1000px) |
+| **Height (Mobile)**     | Range  | 500px   | Section height on mobile (400-700px)  |
+| **Height (Desktop)**    | Range  | 650px   | Section height on desktop (400-900px) |
 
 ## 📖 Installation
 
@@ -293,7 +297,7 @@ Layout:
 
 1. **Image Dimensions**: Use 1920x800px or larger for best quality
 2. **Image Format**: JPG for photos, PNG for graphics with transparency
-3. **Video Upload**: 
+3. **Video Upload**:
    - Go to Shopify Admin → Settings → Files
    - Upload your video (MP4, H.264 codec)
    - Copy the generated CDN URL
@@ -305,12 +309,14 @@ Layout:
 ### Effect Guidelines
 
 1. **Parallax on Scroll**:
+
    - ✅ Best for: Hero sections at the top of the page
    - ✅ Works great with: High-quality lifestyle images
    - ⚠️ Avoid with: Videos (can cause performance issues)
    - 💡 Tip: Combine with a darker overlay for better text contrast
 
 2. **Ambient Movement**:
+
    - ✅ Best for: Static images that need subtle life
    - ✅ Works great with: Product shots, lifestyle photos
    - ⚠️ **Not applied to videos**: Videos already have motion, so ambient movement is automatically disabled when using video backgrounds
@@ -331,17 +337,18 @@ Layout:
 
 ### Design Tips
 
-1. **Overlay Opacity**: 
+1. **Overlay Opacity**:
    - Light images: 20-40% opacity
    - Dark images: 40-60% opacity
    - Busy images: 50-70% opacity
-   
-2. **Text Color**: 
+2. **Text Color**:
+
    - Dark overlay → White text (#ffffff)
    - Light overlay → Dark text (#000000)
    - Ensure contrast for readability
 
 3. **Content Positioning**:
+
    - **Center/Center**: Most versatile, works for any content
    - **Left/Center**: Great for storytelling, more dynamic
    - **Bottom/Left**: Modern, editorial style
@@ -458,6 +465,7 @@ Height: 600px
 ## 📱 Responsive Behavior
 
 ### Mobile (< 768px)
+
 - Height: Uses `height_mobile` setting
 - Font sizes: Reduced for readability
 - Buttons: Stack if needed
@@ -465,6 +473,7 @@ Height: 600px
 - Padding: 40px vertical, 20px horizontal
 
 ### Desktop (≥ 768px)
+
 - Height: Uses `height_desktop` setting
 - Font sizes: Full size
 - Buttons: Side by side
@@ -510,6 +519,7 @@ Buttons: White text on brand color
 ## 📊 Use Cases
 
 ### Perfect For:
+
 - ✅ Homepage hero sections
 - ✅ Landing pages
 - ✅ Campaign pages
@@ -518,6 +528,7 @@ Buttons: White text on brand color
 - ✅ Brand storytelling
 
 ### Not Ideal For:
+
 - ❌ Product detail pages (use product-specific sections)
 - ❌ Blog posts (use article templates)
 - ❌ Cart/Checkout (keep these simple)
@@ -527,18 +538,21 @@ Buttons: White text on brand color
 ### General Recommendations:
 
 **For Product-Focused Stores:**
+
 - Use high-quality product images or lifestyle shots
 - Keep heading short and benefit-driven (3-6 words)
 - Highlight key differentiators in badges
 - Primary button should lead to products/collections
 
 **For Brand Storytelling:**
+
 - Use authentic behind-the-scenes imagery
 - Eyebrow text for credibility (year founded, awards, etc.)
 - Subheading should convey your unique value
 - Secondary button can link to "About" or "Story" page
 
 **For Subscription/Service Businesses:**
+
 - Emphasize convenience and value
 - Use action-oriented language
 - Badges should address common objections

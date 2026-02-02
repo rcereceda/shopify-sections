@@ -1,5 +1,7 @@
 # Shopify Sections
 
+🇺🇸 English | [🇪🇸 Leer en español](./README.es.md)
+
 A collection of free, high-quality, and reusable Shopify sections designed to boost conversions and enhance your store's design.
 
 ## 🚀 Live Demo
@@ -56,7 +58,7 @@ Full-width hero section with image or video background, perfect for making a str
 **Links:**
 
 - [📄 View Code](./sections/hero-banner.liquid)
-- [📖 Full Documentation](./docs/hero-banner.md)
+- [📖 Full Documentation](./docs/en/hero-banner.md)
 
 ---
 
@@ -82,7 +84,7 @@ Display trust indicators to build customer confidence and increase conversions.
 **Links:**
 
 - [📄 View Code](./sections/trust-badges.liquid)
-- [📖 Full Documentation](./docs/trust-badges.md)
+- [📖 Full Documentation](./docs/en/trust-badges.md)
 
 ---
 
@@ -115,7 +117,7 @@ Showcase your best products in a beautiful, responsive grid with full Shopify in
 **Links:**
 
 - [📄 View Code](./sections/featured-products.liquid)
-- [📖 Full Documentation](./docs/featured-products.md)
+- [📖 Full Documentation](./docs/en/featured-products.md)
 
 ---
 
@@ -146,7 +148,7 @@ Showcase customer reviews and build social proof with beautiful testimonial card
 **Links:**
 
 - [📄 View Code](./sections/testimonials.liquid)
-- [📖 Full Documentation](./docs/testimonials.md)
+- [📖 Full Documentation](./docs/en/testimonials.md)
 
 ---
 
@@ -179,7 +181,7 @@ Display frequently asked questions with smooth collapsible answers to reduce sup
 **Links:**
 
 - [📄 View Code](./sections/faq-accordion.liquid)
-- [📖 Full Documentation](./docs/faq-accordion.md)
+- [📖 Full Documentation](./docs/en/faq-accordion.md)
 
 ---
 

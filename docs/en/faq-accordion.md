@@ -1,5 +1,7 @@
 # FAQ Accordion Section
 
+🇺🇸 English | [🇪🇸 Leer en español](../es/faq-accordion.md)
+
 A clean and interactive section to display frequently asked questions with smooth collapsible answers. Perfect for reducing customer support inquiries and improving user experience.
 
 ## 📋 Overview
@@ -9,6 +11,7 @@ The FAQ Accordion section helps customers find answers quickly with an elegant e
 ## ✨ Features
 
 ### Content Features
+
 - **Up to 20 FAQ Items**: Add unlimited questions and answers
 - **Rich Text Answers**: Support for formatted text, lists, and links
 - **Auto-Open First**: Optionally open first item by default
@@ -17,6 +20,7 @@ The FAQ Accordion section helps customers find answers quickly with an elegant e
 - **Semantic HTML**: Proper heading hierarchy and accessibility
 
 ### Design Features
+
 - **Smooth Animations**: Elegant expand/collapse transitions
 - **3 Icon Styles**: Plus/Minus, Chevron, or Arrow
 - **Icon Rotation**: Icons rotate when items expand
@@ -25,6 +29,7 @@ The FAQ Accordion section helps customers find answers quickly with an elegant e
 - **Responsive Design**: Works perfectly on all devices
 
 ### Interaction Features
+
 - **Click to Expand**: Intuitive accordion behavior
 - **Keyboard Accessible**: Full keyboard navigation support
 - **ARIA Labels**: Screen reader friendly
@@ -34,107 +39,109 @@ The FAQ Accordion section helps customers find answers quickly with an elegant e
 
 ### Content Settings
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Heading | Text | "Frequently Asked Questions" | Main section title |
-| Subheading | Textarea | (sample text) | Section subtitle |
+| Setting    | Type     | Default                      | Description        |
+| ---------- | -------- | ---------------------------- | ------------------ |
+| Heading    | Text     | "Frequently Asked Questions" | Main section title |
+| Subheading | Textarea | (sample text)                | Section subtitle   |
 
 ### Behavior Settings
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Open First Item by Default | Checkbox | On | First FAQ opens automatically |
-| Close Other Items When Opening One | Checkbox | On | Only one item open at a time |
-| Enable FAQ Schema (SEO) | Checkbox | On | Adds structured data for search engines |
+| Setting                            | Type     | Default | Description                             |
+| ---------------------------------- | -------- | ------- | --------------------------------------- |
+| Open First Item by Default         | Checkbox | On      | First FAQ opens automatically           |
+| Close Other Items When Opening One | Checkbox | On      | Only one item open at a time            |
+| Enable FAQ Schema (SEO)            | Checkbox | On      | Adds structured data for search engines |
 
 ### Layout Settings
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Container Width | Range (600-1200px) | 900px | Maximum section width |
-| Space Between Items | Range (8-32px) | 12px | Gap between FAQ items |
+| Setting             | Type               | Default | Description           |
+| ------------------- | ------------------ | ------- | --------------------- |
+| Container Width     | Range (600-1200px) | 900px   | Maximum section width |
+| Space Between Items | Range (8-32px)     | 12px    | Gap between FAQ items |
 
 ### Heading Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Heading Alignment | Select | Center | Left, Center, or Right |
-| Heading Size (Mobile) | Range (20-48px) | 28px | Mobile heading font size |
-| Heading Size (Desktop) | Range (24-64px) | 36px | Desktop heading font size |
-| Space Below Heading | Range (16-64px) | 40px | Margin below heading |
-| Heading Color | Color | #000000 | Heading text color |
-| Subheading Color | Color | #666666 | Subheading text color |
+| Setting                | Type            | Default | Description               |
+| ---------------------- | --------------- | ------- | ------------------------- |
+| Heading Alignment      | Select          | Center  | Left, Center, or Right    |
+| Heading Size (Mobile)  | Range (20-48px) | 28px    | Mobile heading font size  |
+| Heading Size (Desktop) | Range (24-64px) | 36px    | Desktop heading font size |
+| Space Below Heading    | Range (16-64px) | 40px    | Margin below heading      |
+| Heading Color          | Color           | #000000 | Heading text color        |
+| Subheading Color       | Color           | #666666 | Subheading text color     |
 
 ### Item Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Item Background | Color | #ffffff | FAQ item background |
-| Item Border Width | Range (0-4px) | 1px | Border thickness |
-| Item Border Color | Color | #e5e5e5 | Border color |
-| Enable Hover Effect | Checkbox | On | Show hover state |
-| Item Border Color (Hover) | Color | #999999 | Border color on hover |
-| Item Border Radius | Range (0-24px) | 8px | Corner roundness |
+| Setting                   | Type           | Default | Description           |
+| ------------------------- | -------------- | ------- | --------------------- |
+| Item Background           | Color          | #ffffff | FAQ item background   |
+| Item Border Width         | Range (0-4px)  | 1px     | Border thickness      |
+| Item Border Color         | Color          | #e5e5e5 | Border color          |
+| Enable Hover Effect       | Checkbox       | On      | Show hover state      |
+| Item Border Color (Hover) | Color          | #999999 | Border color on hover |
+| Item Border Radius        | Range (0-24px) | 8px     | Corner roundness      |
 
 ### Question Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Question Padding | Range (12-32px) | 20px | Internal padding |
-| Question Hover Background | Color | #f9f9f9 | Background on hover |
-| Question Size (Mobile) | Range (14-24px) | 16px | Mobile font size |
-| Question Size (Desktop) | Range (16-28px) | 18px | Desktop font size |
-| Question Color | Color | #000000 | Question text color |
-| Question Font Weight | Select | Semi Bold | Normal, Medium, Semi Bold, Bold |
+| Setting                   | Type            | Default   | Description                     |
+| ------------------------- | --------------- | --------- | ------------------------------- |
+| Question Padding          | Range (12-32px) | 20px      | Internal padding                |
+| Question Hover Background | Color           | #f9f9f9   | Background on hover             |
+| Question Size (Mobile)    | Range (14-24px) | 16px      | Mobile font size                |
+| Question Size (Desktop)   | Range (16-28px) | 18px      | Desktop font size               |
+| Question Color            | Color           | #000000   | Question text color             |
+| Question Font Weight      | Select          | Semi Bold | Normal, Medium, Semi Bold, Bold |
 
 ### Icon Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Icon Style | Select | Plus/Minus | Plus, Chevron, or Arrow |
-| Icon Size | Range (16-32px) | 24px | Icon dimensions |
-| Icon Color | Color | #000000 | Icon color |
+| Setting    | Type            | Default    | Description             |
+| ---------- | --------------- | ---------- | ----------------------- |
+| Icon Style | Select          | Plus/Minus | Plus, Chevron, or Arrow |
+| Icon Size  | Range (16-32px) | 24px       | Icon dimensions         |
+| Icon Color | Color           | #000000    | Icon color              |
 
 **Icon Options:**
+
 - **Plus/Minus**: Classic + that becomes - when open
 - **Chevron**: Downward pointing chevron that rotates
 - **Arrow**: Downward arrow that rotates
 
 ### Answer Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Answer Bottom Padding | Range (12-32px) | 20px | Padding below answer |
-| Answer Size | Range (14-20px) | 16px | Answer text size |
-| Answer Color | Color | #666666 | Answer text color |
+| Setting               | Type            | Default | Description          |
+| --------------------- | --------------- | ------- | -------------------- |
+| Answer Bottom Padding | Range (12-32px) | 20px    | Padding below answer |
+| Answer Size           | Range (14-20px) | 16px    | Answer text size     |
+| Answer Color          | Color           | #666666 | Answer text color    |
 
 ### Spacing
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Top Padding (Mobile) | Range (20-100px) | 40px | Top spacing on mobile |
-| Bottom Padding (Mobile) | Range (20-100px) | 40px | Bottom spacing on mobile |
-| Top Padding (Desktop) | Range (40-160px) | 80px | Top spacing on desktop |
-| Bottom Padding (Desktop) | Range (40-160px) | 80px | Bottom spacing on desktop |
+| Setting                  | Type             | Default | Description               |
+| ------------------------ | ---------------- | ------- | ------------------------- |
+| Top Padding (Mobile)     | Range (20-100px) | 40px    | Top spacing on mobile     |
+| Bottom Padding (Mobile)  | Range (20-100px) | 40px    | Bottom spacing on mobile  |
+| Top Padding (Desktop)    | Range (40-160px) | 80px    | Top spacing on desktop    |
+| Bottom Padding (Desktop) | Range (40-160px) | 80px    | Bottom spacing on desktop |
 
 ### Colors
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
+| Setting          | Type  | Default | Description        |
+| ---------------- | ----- | ------- | ------------------ |
 | Background Color | Color | #f9f9f9 | Section background |
 
 ## 🧩 Block Settings
 
 Each FAQ is added as an **FAQ Item Block** with the following settings:
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Question | Text | "What is your return policy?" | The question text |
-| Answer | Rich Text | (sample answer) | The answer with formatting support |
+| Setting  | Type      | Default                       | Description                        |
+| -------- | --------- | ----------------------------- | ---------------------------------- |
+| Question | Text      | "What is your return policy?" | The question text                  |
+| Answer   | Rich Text | (sample answer)               | The answer with formatting support |
 
 **Block Limit**: Up to 20 FAQ items
 
 **Rich Text Support:**
+
 - Paragraphs
 - Bold and italic text
 - Bullet and numbered lists
@@ -144,6 +151,7 @@ Each FAQ is added as an **FAQ Item Block** with the following settings:
 ## 📱 Responsive Behavior
 
 ### Mobile (< 768px)
+
 - Smaller text sizes
 - Reduced padding
 - Touch-friendly tap targets
@@ -151,6 +159,7 @@ Each FAQ is added as an **FAQ Item Block** with the following settings:
 - Optimized spacing
 
 ### Desktop (≥ 768px)
+
 - Larger typography
 - Hover effects active
 - Optimal reading width
@@ -159,23 +168,29 @@ Each FAQ is added as an **FAQ Item Block** with the following settings:
 ## 🎯 Use Cases
 
 ### Product Pages
+
 Answer product-specific questions to reduce purchase hesitation. Place near Add to Cart button.
 
 ### Homepage
+
 Address common questions about shipping, returns, and policies to build trust.
 
 ### Support/Help Pages
+
 Create a comprehensive self-service knowledge base to reduce support tickets.
 
 ### Landing Pages
+
 Address objections and concerns specific to your campaign or offer.
 
 ### Footer
+
 Provide quick access to essential information on every page.
 
 ## 💡 Best Practices
 
 ### Content
+
 - **Clear Questions**: Use natural language that customers actually search for
 - **Concise Answers**: Keep answers brief but complete (2-4 sentences ideal)
 - **Prioritize Order**: Put most common questions first
@@ -184,6 +199,7 @@ Provide quick access to essential information on every page.
 - **Link to Details**: Use links in answers for more comprehensive information
 
 ### Design
+
 - **Readable Typography**: Minimum 15px for answers, 16px for questions
 - **Sufficient Contrast**: Ensure text is easily readable
 - **Clear Hierarchy**: Make questions stand out from answers
@@ -191,12 +207,14 @@ Provide quick access to essential information on every page.
 - **Mobile First**: Test on small screens first
 
 ### Organization
+
 - **Group by Topic**: If you have many FAQs, create multiple sections
 - **Limit Items**: 5-10 FAQs per section is ideal (max 20)
 - **Logical Order**: Most important/common questions first
 - **Clear Categories**: Use section headings to organize topics
 
 ### SEO
+
 - **Enable Schema**: Always enable FAQ structured data
 - **Use Keywords**: Include relevant search terms in questions
 - **Natural Language**: Write questions as customers would ask them
@@ -205,6 +223,7 @@ Provide quick access to essential information on every page.
 ## 🔧 Technical Details
 
 ### Performance
+
 - Vanilla JavaScript (no dependencies)
 - Minimal CSS for fast rendering
 - Smooth CSS transitions
@@ -212,6 +231,7 @@ Provide quick access to essential information on every page.
 - Optimized for Core Web Vitals
 
 ### Accessibility
+
 - Semantic HTML with proper headings
 - ARIA attributes (aria-expanded)
 - Keyboard navigation support
@@ -220,6 +240,7 @@ Provide quick access to essential information on every page.
 - Button elements for clickable areas
 
 ### SEO
+
 - Schema.org FAQPage markup
 - Proper heading hierarchy (h2, h3)
 - Semantic HTML structure
@@ -227,6 +248,7 @@ Provide quick access to essential information on every page.
 - Rich snippets eligible
 
 ### Browser Support
+
 - All modern browsers
 - IE11+ (with graceful degradation)
 - Mobile browsers (iOS Safari, Chrome)
@@ -235,16 +257,19 @@ Provide quick access to essential information on every page.
 ## 📝 Installation
 
 ### Step 1: Add to Theme
+
 1. Copy `faq-accordion.liquid` to your theme's `sections/` folder
 2. Or create a symlink if using a development workflow
 
 ### Step 2: Add to Page
+
 1. Go to **Online Store** > **Themes** > **Customize**
 2. Navigate to the page where you want FAQs
 3. Click **Add section**
 4. Select **FAQ Accordion**
 
 ### Step 3: Add FAQ Items
+
 1. In the section settings, click **Add block**
 2. Select **FAQ Item**
 3. Fill in:
@@ -254,6 +279,7 @@ Provide quick access to essential information on every page.
 5. Drag to reorder items
 
 ### Step 4: Customize Design
+
 1. Adjust behavior (open first, close others)
 2. Customize colors and typography
 3. Choose icon style
@@ -263,6 +289,7 @@ Provide quick access to essential information on every page.
 ## 🎨 Design Examples
 
 ### Classic Style
+
 - Plus/Minus icons
 - White background items
 - Subtle gray borders
@@ -270,6 +297,7 @@ Provide quick access to essential information on every page.
 - Center-aligned heading
 
 ### Modern Minimal
+
 - Chevron icons
 - Borderless items
 - Subtle dividers
@@ -277,6 +305,7 @@ Provide quick access to essential information on every page.
 - Left-aligned heading
 
 ### Bold & Colorful
+
 - Arrow icons
 - Colored backgrounds
 - Thick borders
@@ -299,6 +328,7 @@ Provide quick access to essential information on every page.
 ## 🔄 Updates & Maintenance
 
 ### Regular Updates
+
 - Add new FAQs based on customer questions
 - Update answers when policies change
 - Remove outdated information
@@ -306,6 +336,7 @@ Provide quick access to essential information on every page.
 - Test all links in answers
 
 ### Quality Control
+
 - Check for typos and grammar
 - Ensure answers are accurate
 - Verify links work correctly
@@ -315,26 +346,33 @@ Provide quick access to essential information on every page.
 ## 🆘 Troubleshooting
 
 ### Items Won't Expand
+
 **Solution**: Check that JavaScript is enabled and no console errors exist
 
 ### Animation is Jerky
+
 **Solution**: Reduce max-height in CSS or simplify answer content
 
 ### Icons Not Showing
+
 **Solution**: Verify icon style is selected in settings
 
 ### Schema Errors in Search Console
+
 **Solution**: Ensure answers have proper text content (not just images)
 
 ### Mobile Layout Issues
+
 **Solution**: Reduce padding and font sizes for mobile
 
 ### Items Stay Open
+
 **Solution**: Enable "Close Other Items When Opening One" setting
 
 ## 📊 Conversion Impact
 
 FAQs can significantly improve user experience and conversions:
+
 - **Reduce Support**: Can decrease support tickets by 30-50%
 - **Increase Conversions**: Answering objections can boost sales by 20%
 - **Improve SEO**: FAQ schema can increase organic traffic by 15-30%
@@ -358,24 +396,28 @@ FAQs can significantly improve user experience and conversions:
 ## 🎓 FAQ Writing Tips
 
 ### Good Question Examples
+
 ✅ "How long does shipping take?"
 ✅ "What is your return policy?"
 ✅ "Do you ship internationally?"
 ✅ "What payment methods do you accept?"
 
 ### Bad Question Examples
+
 ❌ "Shipping" (too vague)
 ❌ "Tell me about returns" (not a question)
 ❌ "Why is your product the best?" (leading)
 ❌ "How do I do everything?" (too broad)
 
 ### Good Answer Examples
+
 ✅ Clear, concise, and complete
 ✅ Includes specific details (timeframes, costs)
 ✅ Links to more information if needed
 ✅ Addresses the question directly
 
 ### Bad Answer Examples
+
 ❌ Too long (over 200 words)
 ❌ Vague or incomplete
 ❌ Doesn't answer the question

@@ -1,5 +1,7 @@
 # Featured Products Section
 
+🇺🇸 English | [🇪🇸 Leer en español](../es/featured-products.md)
+
 A flexible and highly customizable section to showcase your best products. Perfect for highlighting bestsellers, new arrivals, seasonal items, or any curated collection of products.
 
 ## 📋 Overview
@@ -9,6 +11,7 @@ The Featured Products section displays products from any Shopify collection in a
 ## ✨ Features
 
 ### Content Features
+
 - **Collection Integration**: Pull products from any Shopify collection
 - **Flexible Product Limit**: Show 2-12 products
 - **Heading & Subheading**: Customizable section titles
@@ -19,6 +22,7 @@ The Featured Products section displays products from any Shopify collection in a
 - **Image Hover Effect**: Show second product image on hover (if available)
 
 ### Design Features
+
 - **Responsive Grid**: 1 column on mobile (default), 2-4 on desktop
 - **Card Customization**: Border, radius, padding, background
 - **Image Control**: Aspect ratio (square, portrait, landscape) and fit options
@@ -27,6 +31,7 @@ The Featured Products section displays products from any Shopify collection in a
 - **Hover Effects**: Smooth shadow animation + button reveal
 
 ### Performance Features
+
 - **Lazy Loading**: Images load as needed
 - **Responsive Images**: Srcset for optimal image sizes
 - **Optimized Markup**: Clean, semantic HTML
@@ -35,53 +40,54 @@ The Featured Products section displays products from any Shopify collection in a
 
 ### Content Settings
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Heading | Text | "Featured Products" | Main section title |
-| Subheading | Text | "Discover our most popular items" | Section subtitle |
-| Collection | Collection Picker | - | Source collection for products |
-| Maximum Products | Range (2-12) | 4 | Number of products to display |
+| Setting          | Type              | Default                           | Description                    |
+| ---------------- | ----------------- | --------------------------------- | ------------------------------ |
+| Heading          | Text              | "Featured Products"               | Main section title             |
+| Subheading       | Text              | "Discover our most popular items" | Section subtitle               |
+| Collection       | Collection Picker | -                                 | Source collection for products |
+| Maximum Products | Range (2-12)      | 4                                 | Number of products to display  |
 
 ### Layout Settings
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Columns (mobile) | Select | 1 column | Grid columns on mobile (1 or 2) |
-| Columns (desktop) | Range (2-4) | 4 | Grid columns on desktop |
-| Gap Between Products | Range (8-48px) | 24px | Space between product cards |
-| Container Width | Range (1000-1600px) | 1200px | Maximum section width |
+| Setting              | Type                | Default  | Description                     |
+| -------------------- | ------------------- | -------- | ------------------------------- |
+| Columns (mobile)     | Select              | 1 column | Grid columns on mobile (1 or 2) |
+| Columns (desktop)    | Range (2-4)         | 4        | Grid columns on desktop         |
+| Gap Between Products | Range (8-48px)      | 24px     | Space between product cards     |
+| Container Width      | Range (1000-1600px) | 1200px   | Maximum section width           |
 
 ### Heading Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Heading Alignment | Select | Center | Left, Center, or Right |
-| Heading Size (mobile) | Range (20-48px) | 28px | Mobile heading font size |
-| Heading Size (desktop) | Range (24-64px) | 36px | Desktop heading font size |
-| Space Below Heading | Range (16-64px) | 32px | Margin below heading |
-| Heading Color | Color | #000000 | Heading text color |
-| Subheading Color | Color | #666666 | Subheading text color |
+| Setting                | Type            | Default | Description               |
+| ---------------------- | --------------- | ------- | ------------------------- |
+| Heading Alignment      | Select          | Center  | Left, Center, or Right    |
+| Heading Size (mobile)  | Range (20-48px) | 28px    | Mobile heading font size  |
+| Heading Size (desktop) | Range (24-64px) | 36px    | Desktop heading font size |
+| Space Below Heading    | Range (16-64px) | 32px    | Margin below heading      |
+| Heading Color          | Color           | #000000 | Heading text color        |
+| Subheading Color       | Color           | #666666 | Subheading text color     |
 
 ### Product Card Style
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Card Background | Color | #ffffff | Card background color |
-| Card Border Width | Range (0-4px) | 1px | Border thickness |
-| Card Border Color | Color | #e5e5e5 | Border color |
-| Card Border Radius | Range (0-24px) | 8px | Corner roundness |
-| Card Padding | Range (8-32px) | 16px | Internal padding |
+| Setting            | Type           | Default | Description           |
+| ------------------ | -------------- | ------- | --------------------- |
+| Card Background    | Color          | #ffffff | Card background color |
+| Card Border Width  | Range (0-4px)  | 1px     | Border thickness      |
+| Card Border Color  | Color          | #e5e5e5 | Border color          |
+| Card Border Radius | Range (0-24px) | 8px     | Corner roundness      |
+| Card Padding       | Range (8-32px) | 16px    | Internal padding      |
 
 ### Product Image
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Show Second Image on Hover | Checkbox | On | Display second product image on hover |
-| Image Aspect Ratio | Select | Square (1:1) | Image proportions |
-| Image Fit | Select | Cover | How image fills container |
-| Image Background Color | Color | #f5f5f5 | Background for transparent images |
+| Setting                    | Type     | Default      | Description                           |
+| -------------------------- | -------- | ------------ | ------------------------------------- |
+| Show Second Image on Hover | Checkbox | On           | Display second product image on hover |
+| Image Aspect Ratio         | Select   | Square (1:1) | Image proportions                     |
+| Image Fit                  | Select   | Cover        | How image fills container             |
+| Image Background Color     | Color    | #f5f5f5      | Background for transparent images     |
 
 **Image Ratio Options:**
+
 - Square (1:1) - 100%
 - Portrait (4:5) - 125%
 - Portrait (3:4) - 133%
@@ -89,54 +95,54 @@ The Featured Products section displays products from any Shopify collection in a
 
 ### Product Info
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Show Vendor | Checkbox | Off | Display product vendor/brand |
-| Vendor Color | Color | #999999 | Vendor text color |
-| Title Color | Color | #000000 | Product title color |
-| Title Size | Range (14-24px) | 16px | Title font size |
-| Show Description | Checkbox | Off | Display product description |
-| Description Color | Color | #666666 | Description text color |
-| Price Color | Color | #000000 | Price text color |
-| Price Size | Range (14-24px) | 18px | Price font size |
-| Compare Price Color | Color | #999999 | Original price color |
+| Setting             | Type            | Default | Description                  |
+| ------------------- | --------------- | ------- | ---------------------------- |
+| Show Vendor         | Checkbox        | Off     | Display product vendor/brand |
+| Vendor Color        | Color           | #999999 | Vendor text color            |
+| Title Color         | Color           | #000000 | Product title color          |
+| Title Size          | Range (14-24px) | 16px    | Title font size              |
+| Show Description    | Checkbox        | Off     | Display product description  |
+| Description Color   | Color           | #666666 | Description text color       |
+| Price Color         | Color           | #000000 | Price text color             |
+| Price Size          | Range (14-24px) | 18px    | Price font size              |
+| Compare Price Color | Color           | #999999 | Original price color         |
 
 ### Sale Badge
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Show Sale Badge | Checkbox | On | Display discount percentage |
-| Badge Background | Color | #ff0000 | Badge background color |
-| Badge Text Color | Color | #ffffff | Badge text color |
+| Setting          | Type     | Default | Description                 |
+| ---------------- | -------- | ------- | --------------------------- |
+| Show Sale Badge  | Checkbox | On      | Display discount percentage |
+| Badge Background | Color    | #ff0000 | Badge background color      |
+| Badge Text Color | Color    | #ffffff | Badge text color            |
 
 ### Button
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Show Button | Checkbox | On | Display CTA button below card (appears on hover) |
-| Button Text | Text | "Buy Now" | Button label |
-| Button Background | Color | #000000 | Button background color |
-| Button Text Color | Color | #ffffff | Button text color |
-| Button Border Radius | Range (0-24px) | 4px | Button corner roundness |
+| Setting              | Type           | Default   | Description                                      |
+| -------------------- | -------------- | --------- | ------------------------------------------------ |
+| Show Button          | Checkbox       | On        | Display CTA button below card (appears on hover) |
+| Button Text          | Text           | "Buy Now" | Button label                                     |
+| Button Background    | Color          | #000000   | Button background color                          |
+| Button Text Color    | Color          | #ffffff   | Button text color                                |
+| Button Border Radius | Range (0-24px) | 4px       | Button corner roundness                          |
 
 ### View All Button
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Show 'View All' Button | Checkbox | On | Display collection link |
-| Button Text | Text | "Shop Now" | Button label |
-| Space Above Button | Range (24-80px) | 48px | Top margin |
-| Background | Color | #ffffff | Button background |
-| Text Color | Color | #000000 | Button text color |
-| Border Color | Color | #000000 | Button border color |
+| Setting                | Type            | Default    | Description             |
+| ---------------------- | --------------- | ---------- | ----------------------- |
+| Show 'View All' Button | Checkbox        | On         | Display collection link |
+| Button Text            | Text            | "Shop Now" | Button label            |
+| Space Above Button     | Range (24-80px) | 48px       | Top margin              |
+| Background             | Color           | #ffffff    | Button background       |
+| Text Color             | Color           | #000000    | Button text color       |
+| Border Color           | Color           | #000000    | Button border color     |
 
 ### Section Spacing
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| Padding Top | Range (0-120px) | 60px | Top spacing |
-| Padding Bottom | Range (0-120px) | 60px | Bottom spacing |
-| Background Color | Color | #f5f5f5 | Section background |
+| Setting          | Type            | Default | Description        |
+| ---------------- | --------------- | ------- | ------------------ |
+| Padding Top      | Range (0-120px) | 60px    | Top spacing        |
+| Padding Bottom   | Range (0-120px) | 60px    | Bottom spacing     |
+| Background Color | Color           | #f5f5f5 | Section background |
 
 ## 📦 Installation
 
@@ -171,6 +177,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Use Case**: Showcase your top-selling products on the homepage
 
 **Settings**:
+
 - **Heading**: "Our Bestsellers"
 - **Subheading**: "Customer favorites that keep selling out"
 - **Collection**: Select your "Bestsellers" collection
@@ -184,6 +191,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Use Case**: Highlight recently added products
 
 **Settings**:
+
 - **Heading**: "Just Arrived"
 - **Subheading**: "Fresh products added this week"
 - **Collection**: Select your "New Arrivals" collection
@@ -197,6 +205,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Use Case**: Feature seasonal or limited-time products
 
 **Settings**:
+
 - **Heading**: "Summer Collection"
 - **Subheading**: "Limited time only"
 - **Collection**: Select your seasonal collection
@@ -210,6 +219,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Use Case**: Show featured products for a specific category
 
 **Settings**:
+
 - **Heading**: "Featured Coffee Blends"
 - **Subheading**: "Hand-selected by our roasters"
 - **Collection**: "Featured Coffee"
@@ -223,11 +233,13 @@ The Featured Products section displays products from any Shopify collection in a
 ### Collection Setup
 
 1. **Create Dedicated Collections**
+
    - Create specific collections for featured products
    - Use automated collections with conditions (e.g., "tag equals featured")
    - Keep collections updated with your best products
 
 2. **Product Curation**
+
    - Feature 4-8 products for optimal impact
    - Choose products with high-quality images
    - Include a mix of bestsellers and new items
@@ -241,17 +253,20 @@ The Featured Products section displays products from any Shopify collection in a
 ### Design Tips
 
 1. **Image Consistency**
+
    - Use consistent image styles across products
    - Ensure all images have similar lighting and backgrounds
    - Use the same aspect ratio for all product images
    - Recommended: Square (1:1) or Portrait (4:5)
 
 2. **Grid Layout**
+
    - **2 columns**: Best for detailed product cards with descriptions
    - **3 columns**: Balanced layout for most use cases
    - **4 columns**: Compact grid for showcasing many products
 
 3. **Color Scheme**
+
    - Match section colors to your brand
    - Ensure sufficient contrast for readability
    - Use sale badge color strategically (red for urgency)
@@ -265,16 +280,19 @@ The Featured Products section displays products from any Shopify collection in a
 ### Conversion Optimization
 
 1. **Sale Badges**
+
    - Always show sale badges when products are discounted
    - Percentage-off creates urgency
    - Use contrasting colors for visibility
 
 2. **Call-to-Action**
+
    - Use action-oriented button text ("Shop Now", "Add to Cart")
    - Keep button text short (1-3 words)
    - Ensure buttons stand out with contrasting colors
 
 3. **Social Proof**
+
    - Show vendor names for multi-brand stores
    - Consider adding review stars (requires app integration)
    - Use "View All" button to drive collection page traffic
@@ -291,6 +309,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Problem**: Section displays "No products found in this collection"
 
 **Solutions**:
+
 1. Verify a collection is selected in section settings
 2. Check that the collection has published products
 3. Ensure products in the collection are active and in stock
@@ -301,6 +320,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Problem**: Product images appear broken or don't load
 
 **Solutions**:
+
 1. Check that products have featured images assigned
 2. Verify image files aren't corrupted
 3. Ensure images are published (not in draft mode)
@@ -311,6 +331,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Problem**: Products don't display correctly on mobile devices
 
 **Solutions**:
+
 1. Check "Columns (mobile)" setting (should be 1-2)
 2. Reduce card padding if cards feel cramped
 3. Adjust grid gap for better spacing
@@ -321,6 +342,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Problem**: Discount badge doesn't appear on sale products
 
 **Solutions**:
+
 1. Verify "Show Sale Badge" is enabled
 2. Check that product has both price and compare_at_price set
 3. Ensure compare_at_price is higher than price
@@ -331,6 +353,7 @@ The Featured Products section displays products from any Shopify collection in a
 **Problem**: Section takes long to load
 
 **Solutions**:
+
 1. Reduce number of products shown
 2. Optimize product images (compress before uploading)
 3. Use lazy loading (already built-in)
@@ -339,17 +362,20 @@ The Featured Products section displays products from any Shopify collection in a
 ## 📱 Responsive Behavior
 
 ### Mobile (< 768px)
+
 - Grid switches to mobile column count (1-2)
 - Heading size reduces to mobile size
 - Touch-optimized hover states
 - Stacked layout for better readability
 
 ### Tablet (768px - 1024px)
+
 - Desktop column count applies
 - Desktop heading size applies
 - Full hover effects enabled
 
 ### Desktop (> 1024px)
+
 - Full desktop layout
 - Maximum container width applies
 - Optimal spacing and typography
@@ -357,12 +383,14 @@ The Featured Products section displays products from any Shopify collection in a
 ## 🚀 Performance
 
 ### Optimization Features
+
 - **Lazy Loading**: Images load only when visible
 - **Responsive Images**: Srcset provides optimal sizes
 - **Efficient Markup**: Minimal DOM elements
 - **CSS-only Animations**: No JavaScript overhead
 
 ### Best Practices
+
 - Limit products to 8-12 maximum
 - Optimize product images before upload (recommended: 1200x1200px)
 - Use WebP format when possible
@@ -371,6 +399,7 @@ The Featured Products section displays products from any Shopify collection in a
 ## 🎨 Color Scheme Examples
 
 ### Minimal & Clean
+
 ```
 Background: #ffffff
 Card Background: #ffffff
@@ -381,6 +410,7 @@ Button: #000000 / #ffffff
 ```
 
 ### Bold & Modern
+
 ```
 Background: #f8f8f8
 Card Background: #ffffff
@@ -391,6 +421,7 @@ Button: #ff0000 / #ffffff
 ```
 
 ### Elegant & Sophisticated
+
 ```
 Background: #fafafa
 Card Background: #ffffff
@@ -401,6 +432,7 @@ Button: #2c2c2c / #ffffff
 ```
 
 ### Warm & Inviting
+
 ```
 Background: #fff9f5
 Card Background: #ffffff
@@ -413,12 +445,14 @@ Button: #5c4033 / #ffffff
 ## 🔗 Integration with Other Sections
 
 ### Works Great With:
+
 - **Hero Banner**: Feature products after hero
 - **Trust Badges**: Build credibility before products
 - **Testimonials**: Add social proof after products
 - **FAQ**: Answer questions after showcasing products
 
 ### Recommended Page Flow:
+
 1. Hero Banner (with CTA)
 2. Trust Badges (build trust)
 3. **Featured Products** (showcase products)
@@ -438,6 +472,7 @@ Button: #5c4033 / #ffffff
 ## 🆘 Need Help?
 
 If you encounter issues or need customization help:
+
 1. Check the troubleshooting section above
 2. Review Shopify's [Theme Development Documentation](https://shopify.dev/docs/themes)
 3. Test in Shopify's Theme Customizer preview mode
