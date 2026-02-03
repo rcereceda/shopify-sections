@@ -1,8 +1,12 @@
-# Shopify Sections
+# Atomic Sections
 
 🇺🇸 English | [🇪🇸 Leer en español](./README.es.md)
 
-A collection of free, high-quality, and reusable Shopify sections designed to boost conversions and enhance your store's design.
+**Project website:** [atomicsections.com](https://atomicsections.com)
+
+Production-ready Shopify sections designed to improve conversions and enhance your store's design—without installing apps or touching code.
+
+---
 
 ## 🚀 Live Demo
 
@@ -10,245 +14,208 @@ A collection of free, high-quality, and reusable Shopify sections designed to bo
 
 **[View Demo Store →](https://atomic-sections.myshopify.com)** | Password: `shopify`
 
-> Preview all 5 sections running on a live Shopify store with the Horizon theme.
+> Explore real examples of each section configured for different industries (coffee, fashion, wellness).
 
 ---
 
-## ✨ Features
+## 🎯 Who Is This For?
 
-- **100% Free & Open Source** - No hidden costs, no subscriptions
-- **Copy & Paste Ready** - Just copy the code and paste it into your theme editor
-- **No Dependencies** - Pure Liquid and CSS, no external libraries required
-- **Fully Customizable** - All settings editable through the Shopify theme editor
-- **Responsive Design** - Works perfectly on all devices
-- **Performance Optimized** - Lightweight and fast-loading
+### ✅ Perfect if you:
+- Own a Shopify store and want to improve your design
+- Want professional sections without monthly app fees
+- Prefer done-for-you installation over DIY
+- Need sections that work with any theme
 
-## 📚 What are Shopify Sections?
+### 🤔 Maybe not for you if:
+- You need ongoing technical support (free sections are self-service)
+- You want a complete theme (these are individual sections)
+- You need custom features (consider requesting professional installation)
 
-Sections are modular, reusable components that you can add to any page in your Shopify store through the theme customizer. They're fully customizable without touching code!
+---
 
 ## 📦 Available Sections
 
-### 1. Hero Banner ✅
+This repository contains **5 free sections** as a sample of the Atomic Sections collection:
 
-Full-width hero section with image or video background, perfect for making a strong first impression.
+### 1. Hero Banner
 
-**Features:**
+Full-width hero with image/video backgrounds, parallax effects, and integrated social proof.
 
-- Image or video background support
-- **Parallax effects**: Scroll-based parallax + ambient movement animation
-- Customizable overlay (color + opacity)
-- Flexible content positioning (9 position combinations)
-- Eyebrow text, heading, subheading
-- Up to 2 CTA buttons (primary + secondary)
-- **Social proof blocks**: Trust badges OR featured testimonial (or both)
-- Dynamic trust badges via blocks (unlimited, drag & drop reorderable)
-- Featured testimonial block with stars, quote, photo, and customer info (limit: 1)
-- Heroicons for badges
-- Fully responsive with separate mobile/desktop heights
-- Accessibility-friendly (respects motion preferences)
+**Key Benefits:**
+- Make a strong first impression
+- Reduce bounce rate with compelling CTAs
+- Build trust with integrated badges/testimonials
+- Works with images or videos
 
-**Use Cases:**
-
-- Homepage hero
-- Landing pages
-- Campaign pages
-- Product launches
-
-**Links:**
-
-- [📄 View Code](./sections/hero-banner.liquid)
-- [📖 Full Documentation](./docs/en/hero-banner.md)
+[📄 View Code](./sections/hero-banner.liquid) | [📖 Documentation](./docs/en/hero-banner.md) | [🎬 See Demo](https://atomic-sections.myshopify.com/pages/hero-banner)
 
 ---
 
-### 2. Trust Badges ✅
+### 2. Trust Badges
 
-Display trust indicators to build customer confidence and increase conversions.
+Display guarantees, free shipping, support, and quality indicators to increase customer confidence.
 
-**Features:**
+**Key Benefits:**
+- Increase conversions by reducing purchase anxiety
+- Highlight your competitive advantages
+- Professional icons included (no design work needed)
+- Place anywhere: homepage, product pages, checkout
 
-- Multiple badge support via blocks
-- 6 professional Heroicons (free shipping, money-back guarantee, 24/7 support, premium quality, easy returns, eco-friendly)
-- Responsive grid layout (1-4 columns)
-- Customizable colors, spacing, and border radius
-- Smooth hover effects
-
-**Use Cases:**
-
-- Homepage
-- Product pages
-- Checkout pages
-- Landing pages
-
-**Links:**
-
-- [📄 View Code](./sections/trust-badges.liquid)
-- [📖 Full Documentation](./docs/en/trust-badges.md)
+[📄 View Code](./sections/trust-badges.liquid) | [📖 Documentation](./docs/en/trust-badges.md) | [🎬 See Demo](https://atomic-sections.myshopify.com/pages/trust-badges)
 
 ---
 
-### 3. Featured Products ✅
+### 3. Featured Products
 
-Showcase your best products in a beautiful, responsive grid with full Shopify integration.
+Showcase your best inventory with hover effects and seamless Shopify integration.
 
-**Features:**
+**Key Benefits:**
+- Highlight bestsellers or new arrivals
+- Second image on hover (increases engagement)
+- Direct integration with your collections
+- No apps needed
 
-- Pull products from any Shopify collection
-- Flexible product limit (2-12 products)
-- Responsive grid (1-2 mobile, 2-4 desktop columns)
-- Automatic sale badges with discount percentage
-- Product cards with image, title, price, and CTA button
-- Compare at price display for sales
-- Optional vendor and description display
-- Customizable card styling (border, radius, padding)
-- Image aspect ratio control (square, portrait, landscape)
-- "View All" button linking to full collection
-- Lazy loading and responsive images for performance
-
-**Use Cases:**
-
-- Homepage bestsellers
-- New arrivals showcase
-- Seasonal collections
-- Category landing pages
-- Product recommendations
-
-**Links:**
-
-- [📄 View Code](./sections/featured-products.liquid)
-- [📖 Full Documentation](./docs/en/featured-products.md)
+[📄 View Code](./sections/featured-products.liquid) | [📖 Documentation](./docs/en/featured-products.md) | [🎬 See Demo](https://atomic-sections.myshopify.com/pages/featured-products)
 
 ---
 
-### 4. Testimonials ✅
+### 4. Testimonials
 
-Showcase customer reviews and build social proof with beautiful testimonial cards.
+Display customer reviews with photos and star ratings to build social proof.
 
-**Features:**
+**Key Benefits:**
+- Build trust with real customer feedback
+- Increase conversions with social proof
+- Professional design out of the box
+- Easy to update as you get more reviews
 
-- Up to 12 testimonials via blocks
-- Star rating system (1-5 stars)
-- Customer photos with circular or square display
-- Customer name and role/company display
-- Optional quote icon
-- Responsive grid (1 mobile, up to 3 desktop columns)
-- Smooth hover effects with card elevation
-- Fully customizable colors, spacing, and typography
-- Placeholder support for missing photos
-
-**Use Cases:**
-
-- Homepage social proof
-- Product pages
-- About page
-- Landing pages
-- After checkout confirmation
-
-**Links:**
-
-- [📄 View Code](./sections/testimonials.liquid)
-- [📖 Full Documentation](./docs/en/testimonials.md)
+[📄 View Code](./sections/testimonials.liquid) | [📖 Documentation](./docs/en/testimonials.md) | [🎬 See Demo](https://atomic-sections.myshopify.com/pages/testimonials)
 
 ---
 
-### 5. FAQ Accordion ✅
+### 5. FAQ Accordion
 
-Display frequently asked questions with smooth collapsible answers to reduce support inquiries.
+Answer common questions with smooth collapsible sections and SEO-friendly markup.
 
-**Features:**
+**Key Benefits:**
+- Reduce support inquiries
+- Improve SEO with structured data
+- Keep pages clean and scannable
+- 3 icon styles to match your brand
 
-- Up to 20 FAQ items via blocks
-- Smooth expand/collapse animations
-- 3 icon styles (Plus/Minus, Chevron, Arrow)
-- Icon rotation on expand
-- Rich text support in answers
-- Auto-open first item option
-- Single or multiple items open mode
-- SEO-friendly Schema.org markup
-- Fully customizable colors, spacing, and typography
-- Hover effects on items
-- Keyboard accessible
-
-**Use Cases:**
-
-- Product pages
-- Homepage
-- Support/Help pages
-- Landing pages
-- Footer sections
-
-**Links:**
-
-- [📄 View Code](./sections/faq-accordion.liquid)
-- [📖 Full Documentation](./docs/en/faq-accordion.md)
+[📄 View Code](./sections/faq-accordion.liquid) | [📖 Documentation](./docs/en/faq-accordion.md) | [🎬 See Demo](https://atomic-sections.myshopify.com/pages/faq-accordion)
 
 ---
 
-## 📖 Installation
+## 🔧 Installation Options
+
+### Option A: Professional Installation (Recommended)
+
+Get your sections installed and customized by an expert—completely free during our launch phase.
+
+**What's included:**
+- Installation in a duplicated theme (zero risk)
+- Basic customization (colors, fonts)
+- Video tutorial showing you how to edit settings
+- Delivery in 24-48 hours
+
+**[Request Free Installation →](https://atomicsections.com)**
+
+---
+
+### Option B: DIY Installation (For Technical Users)
+
+If you're comfortable editing theme files, you can install the sections yourself.
+
+**Requirements:**
+- Basic understanding of Shopify theme structure
+- Access to your theme's code editor
+- Ability to troubleshoot if needed
+
+**⚠️ Important:**
+- No support included for self-installation
+- You're responsible for testing and compatibility
+- Backup your theme before making changes
+
+<details>
+<summary><strong>Click to view DIY installation steps</strong></summary>
 
 ### Step 1: Copy the Section Code
 
-1. Navigate to the section you want to use (e.g., `sections/trust-badges.liquid`)
+1. Navigate to the section you want (e.g., `sections/trust-badges.liquid`)
 2. Copy the entire file content
 
-### Step 2: Create the Section File
+### Step 2: Add to Your Theme
 
 1. Go to your Shopify Admin
 2. Navigate to **Online Store** → **Themes**
 3. Click **Actions** → **Edit code** on your active theme
-4. In the left sidebar, find the **Sections** folder
-5. Click the **"+"** icon (or right-click → **New file**)
-6. Name it `trust-badges.liquid`
-7. Paste the copied code
-8. Click **Save**
+4. In the **Sections** folder, click **Add a new section**
+5. Name it (e.g., `trust-badges`)
+6. Paste the copied code
+7. Click **Save**
 
-> **Note**: If you see an error, make sure you copied the complete file including the `{% schema %}` section.
+### Step 3: Add to Your Pages
 
-### Step 3: Add Section to Your Pages
+1. Go to **Online Store** → **Themes** → **Customize**
+2. Navigate to the page where you want the section
+3. Click **Add section**
+4. Find your section (e.g., "Trust Badges")
+5. Customize the settings
+6. Click **Save**
 
-1. Go back to **Online Store** → **Themes**
-2. Click **Customize** (not "Edit code")
-3. Navigate to the page where you want the section (e.g., Home page)
-4. Click **Add section** (you'll see this button under Header, Template sections, or Footer)
-5. Search for **"Trust Badges"** in the section list
-6. Click to add it
-7. Customize the settings in the right sidebar
-8. Click **Save**
+### Step 4: Test Thoroughly
+
+- Preview on desktop and mobile
+- Test all interactive elements
+- Verify responsive behavior
+- Check browser console for errors
+
+</details>
+
+---
+
+## ✨ Why Atomic Sections?
+
+### Built for Real Stores
+Every section is designed based on experience building Shopify stores for real brands. They solve actual problems without adding app bloat.
+
+### No Vendor Lock-In
+Open source code means you own it forever. No subscriptions, no apps to maintain, no dependencies.
+
+### Performance First
+Pure Liquid and CSS means fast loading times and no impact on your store's speed score.
 
 ---
 
 ## 🎨 Customization
 
-All sections are fully customizable through the Shopify theme editor. No coding required!
+All sections are fully customizable through the Shopify theme editor—no coding required.
 
-Each section includes settings for:
-
-- Layout options (columns, spacing, alignment)
-- Colors (background, text, icons)
+**You can adjust:**
+- Layout (columns, spacing, alignment)
+- Colors (background, text, buttons)
 - Typography (sizes, weights)
-- Spacing (padding, margins, gaps)
+- Spacing (padding, margins)
+- Behavior (animations, hover effects)
+
+---
+
+## 🔮 Beyond Free Sections
+
+These 5 sections represent the open-source foundation of Atomic Sections.
+
+For more advanced sections, industry-specific packs, or custom development, visit [atomicsections.com](https://atomicsections.com).
 
 ---
 
 ## 💡 Tips for Best Results
 
-1. **Hero Banner**: Use high-quality images/videos and clear CTAs for maximum impact
-2. **Trust Badges**: Place them on your homepage, product pages, and near checkout buttons
-3. **Featured Products**: Showcase bestsellers or new arrivals with compelling product images
-4. **Testimonials**: Use real customer photos and authentic reviews for credibility
-5. **Keep it Simple**: Don't overload pages with too many sections
-6. **Test on Mobile**: Always preview on mobile devices
-7. **Match Your Brand**: Customize colors to match your store's design
-8. **Use High-Quality Content**: Good copy and images make a huge difference
-
----
-
-## 🤝 Contributing
-
-Found a bug? Have a suggestion? Want to contribute a new section?
-
-Feel free to open an issue or submit a pull request!
+1. **Use high-quality content** - Good images and copy make the biggest difference
+2. **Match your brand** - Customize colors and fonts to fit your store
+3. **Test on mobile** - Most Shopify traffic comes from mobile devices
+4. **Keep it simple** - Don't overload pages with too many sections
+5. **Use real data** - Real testimonials and products perform better than placeholders
 
 ---
 
@@ -258,35 +225,12 @@ MIT License - Free to use for personal and commercial projects.
 
 ---
 
-## 🙋 Support
+## 🙋 Questions?
 
-Need help? Have questions?
-
-- Check the [installation guide](#-installation) above
-- Review the code comments in each section
-- Open an issue on GitHub
+- **For merchants:** Visit [atomicsections.com](https://atomicsections.com) to request professional installation
+- **For technical users:** Check the documentation in `/docs` or open an issue
+- **For custom work:** Contact us through [atomicsections.com](https://atomicsections.com)
 
 ---
 
-## 🎯 Roadmap
-
-### MVP Complete! 🎉
-
-- [x] Hero Banner section ✅
-- [x] Trust Badges section ✅
-- [x] Featured Products section ✅
-- [x] Testimonials section ✅
-- [x] FAQ Accordion section ✅
-
-### Future Sections
-
-- [ ] Feature Grid section
-- [ ] Announcement Bar section
-- [ ] Newsletter Signup section
-- [ ] Image Gallery section
-- [ ] Countdown Timer section
-- [ ] Before/After Slider section
-
----
-
-**Made with ❤️ for the Shopify community**
+**Made for Shopify merchants who want better conversions without the complexity.**
