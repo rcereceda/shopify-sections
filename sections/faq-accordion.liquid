@@ -76,10 +76,12 @@
     border-radius: {{ section.settings.item_border_radius }}px;
     overflow: hidden;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
 
   .faq-item-{{ section.id }}:hover {
     {% if section.settings.hover_effect %}
+      background: {{ section.settings.question_hover_background }};
       border-color: {{ section.settings.item_border_color_hover }};
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     {% endif %}
@@ -95,13 +97,9 @@
     padding: {{ section.settings.question_padding }}px;
     background: transparent;
     border: none;
-    cursor: pointer;
     text-align: left;
     transition: all 0.3s ease;
-  }
-
-  .faq-question-{{ section.id }}:hover {
-    background: {{ section.settings.question_hover_background }};
+    pointer-events: none;
   }
 
   .faq-question-text-{{ section.id }} {
@@ -111,7 +109,6 @@
     line-height: 1.4;
     margin: 0;
     flex-grow: 1;
-    cursor: pointer;
   }
 
   @media (min-width: 768px) {
@@ -127,7 +124,6 @@
     flex-shrink: 0;
     transition: transform 0.35s ease;
     position: relative;
-    cursor: pointer;
   }
 
   .faq-icon-{{ section.id }} svg {
@@ -285,7 +281,7 @@
       
       if (!button || !answer) return;
       
-      button.addEventListener('click', function() {
+      item.addEventListener('click', function() {
         const isActive = item.classList.contains('active');
         
         {% if section.settings.close_others %}
