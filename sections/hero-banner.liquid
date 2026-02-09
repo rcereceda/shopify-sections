@@ -34,6 +34,10 @@
   --overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
   --text-color: {{ section.settings.text_color }};
   --content-max-width: {{ section.settings.content_max_width }}px;
+  --button-primary-bg: {{ section.settings.button_primary_bg }};
+  --button-primary-text: {{ section.settings.button_primary_text }};
+  --button-secondary-bg: {{ section.settings.button_secondary_bg }};
+  --button-secondary-text: {{ section.settings.button_secondary_text }};
 ">
   <div class="hero-banner-container hero-height-{{ section.settings.height_desktop }}">
     {%- comment -%} Background Media {%- endcomment -%}
@@ -441,23 +445,25 @@
   }
 
   .hero-button-primary {
-    background-color: var(--text-color);
-    color: var(--overlay-color);
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .hero-button-primary:hover {
     opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   }
 
   .hero-button-secondary {
-    background-color: transparent;
-    color: var(--text-color);
-    border-color: var(--text-color);
+    background-color: var(--button-secondary-bg);
+    color: var(--button-secondary-text);
+    border-color: var(--button-secondary-text);
   }
 
   .hero-button-secondary:hover {
-    background-color: var(--text-color);
-    color: var(--overlay-color);
+    opacity: 0.85;
   }
 
   /* Mini Badges */
@@ -591,6 +597,25 @@
     opacity: 0.75;
   }
 
+  /* Mobile: stack badges vertically and full-width buttons */
+  @media (max-width: 767px) {
+    .hero-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .hero-button {
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero-badges {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
   /* Desktop Styles */
   @media (min-width: 768px) {
     .hero-banner-container {
@@ -628,6 +653,7 @@
 
     .hero-badges {
       gap: 32px;
+      margin-top: 40px;
     }
 
     .hero-badge-item {
@@ -794,6 +820,34 @@
       "type": "url",
       "id": "button_link_2",
       "label": "Button 2 link"
+    },
+    {
+      "type": "header",
+      "content": "Button Colors"
+    },
+    {
+      "type": "color",
+      "id": "button_primary_bg",
+      "label": "Button 1 background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_primary_text",
+      "label": "Button 1 text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_secondary_bg",
+      "label": "Button 2 background",
+      "default": "rgba(255, 255, 255, 0)"
+    },
+    {
+      "type": "color",
+      "id": "button_secondary_text",
+      "label": "Button 2 text color",
+      "default": "#ffffff"
     },
     {
       "type": "header",
