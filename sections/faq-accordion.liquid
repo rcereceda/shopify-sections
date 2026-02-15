@@ -180,6 +180,20 @@
     margin-bottom: 8px;
   }
 
+  .faq-answer-content-{{ section.id }} a {
+    color: {{ section.settings.link_color }};
+    text-decoration: underline;
+  }
+
+  .faq-answer-content-{{ section.id }} a:hover {
+    opacity: 0.8;
+  }
+
+  .faq-answer-content-{{ section.id }} strong {
+    font-weight: 600;
+    color: {{ section.settings.answer_color }};
+  }
+
   /* Schema.org structured data for SEO */
   .faq-schema {
     display: none;
@@ -603,6 +617,13 @@
       "id": "answer_color",
       "label": "Answer Color",
       "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link Color",
+      "info": "Color for links inside answers",
+      "default": "#0066cc"
     },
     {
       "type": "header",
