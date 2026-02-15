@@ -9,14 +9,23 @@ The Trust Badges section displays multiple trust indicators in a responsive grid
 ## ✨ Features
 
 - **Multiple Badges**: Add unlimited trust badges using blocks
-- **6 Built-in Icons** (Heroicons):
-  - 🚚 Free Shipping (truck icon)
-  - ✅ Money-Back Guarantee (shield-check icon)
-  - 💬 24/7 Support (chat bubbles icon)
-  - ⭐ Premium Quality (star icon)
-  - 🔄 Easy Returns (arrow-path icon)
-  - 🌱 Eco-Friendly (leaf icon)
-- **Professional Design**: Modern Heroicons for a clean, consistent look
+- **15+ Built-in Icons** (Lucide Icons):
+  - 🚚 Free Shipping (truck)
+  - 📦 Verified Shipping (package-check)
+  - 🛡️ Money-Back Guarantee (shield-check)
+  - 💬 24/7 Support (message-circle)
+  - ⭐ Premium Quality (star)
+  - 🔄 Easy Returns (refresh-cw)
+  - 🌿 Eco-Friendly (leaf)
+  - ⚡ Fast Delivery (zap)
+  - ✨ Unique Pieces (sparkles)
+  - ❤️ Made with Love (heart)
+  - 🤲 Handcrafted (hand-heart)
+  - 🌙 Brand Identity (moon-star)
+  - ✂️ Artisan Crafted (scissors)
+  - 👗 Size Inclusive (shirt)
+  - 🎁 Special Packaging (gift)
+- **Professional Design**: Modern Lucide Icons for an elegant, refined look
 - **Responsive Grid**: 1-4 columns on desktop, 1-2 on mobile
 - **Fully Customizable**: Colors, spacing, border radius
 - **Hover Effects**: Smooth animations on hover
@@ -41,11 +50,11 @@ The Trust Badges section displays multiple trust indicators in a responsive grid
 
 ### Block Settings (Per Badge)
 
-| Setting         | Type   | Default              | Description                 |
-| --------------- | ------ | -------------------- | --------------------------- |
-| **Icon**        | Select | Shipping             | Choose from 6 icons or none |
-| **Title**       | Text   | "Free Shipping"      | Badge title                 |
-| **Description** | Text   | "On orders over $50" | Badge description           |
+| Setting         | Type   | Default              | Description                  |
+| --------------- | ------ | -------------------- | ---------------------------- |
+| **Icon**        | Select | Truck                | Choose from 15+ icons or none |
+| **Title**       | Text   | "Free Shipping"      | Badge title                  |
+| **Description** | Text   | "On orders over $50" | Badge description            |
 
 ## 📖 Installation
 
@@ -186,11 +195,11 @@ Border Radius: 8px
 
 ## ⚡ Performance
 
-- **No External Dependencies**: All icons are inline SVG (Heroicons)
+- **No External Dependencies**: All icons are inline SVG (Lucide Icons)
 - **Minimal CSS**: ~2KB of styles
 - **Fast Loading**: No JavaScript required
 - **SEO Friendly**: Semantic HTML structure
-- **Modern Icons**: Professional Heroicons for a polished look
+- **Modern Icons**: Professional Lucide Icons for an elegant, refined look
 
 ## 🎨 Color Schemes
 

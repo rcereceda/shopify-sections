@@ -9,14 +9,23 @@ La sección Trust Badges muestra múltiples indicadores de confianza en un grid 
 ## ✨ Características
 
 - **Múltiples Badges**: Agrega badges de confianza ilimitados usando bloques
-- **6 Iconos Integrados** (Heroicons):
-  - 🚚 Envío Gratis (icono de camión)
-  - ✅ Garantía de Devolución (icono de escudo con check)
-  - 💬 Soporte 24/7 (icono de burbujas de chat)
-  - ⭐ Calidad Premium (icono de estrella)
-  - 🔄 Devoluciones Fáciles (icono de flecha circular)
-  - 🌱 Eco-Friendly (icono de hoja)
-- **Diseño Profesional**: Heroicons modernos para un look limpio y consistente
+- **15+ Iconos Integrados** (Lucide Icons):
+  - 🚚 Envío Gratis (truck)
+  - 📦 Envío Verificado (package-check)
+  - 🛡️ Garantía de Devolución (shield-check)
+  - 💬 Soporte 24/7 (message-circle)
+  - ⭐ Calidad Premium (star)
+  - 🔄 Devoluciones Fáciles (refresh-cw)
+  - 🌿 Eco-Friendly (leaf)
+  - ⚡ Entrega Rápida (zap)
+  - ✨ Piezas Únicas (sparkles)
+  - ❤️ Hecho con Amor (heart)
+  - 🤲 Artesanal (hand-heart)
+  - 🌙 Identidad de Marca (moon-star)
+  - ✂️ Confección Artesanal (scissors)
+  - 👗 Tallas Inclusivas (shirt)
+  - 🎁 Empaque Especial (gift)
+- **Diseño Profesional**: Iconos Lucide modernos para un look elegante y refinado
 - **Grid Responsive**: 1-4 columnas en escritorio, 1-2 en móvil
 - **Totalmente Personalizable**: Colores, espaciado, border radius
 - **Efectos Hover**: Animaciones suaves al pasar el mouse
@@ -41,11 +50,11 @@ La sección Trust Badges muestra múltiples indicadores de confianza en un grid 
 
 ### Ajustes de Bloque (Por Badge)
 
-| Ajuste          | Tipo   | Por Defecto          | Descripción                    |
-| --------------- | ------ | -------------------- | ------------------------------ |
-| **Icono**       | Select | Shipping             | Elige entre 6 iconos o ninguno |
-| **Título**      | Texto  | "Free Shipping"      | Título del badge               |
-| **Descripción** | Texto  | "On orders over $50" | Descripción del badge          |
+| Ajuste          | Tipo   | Por Defecto          | Descripción                     |
+| --------------- | ------ | -------------------- | ------------------------------- |
+| **Icono**       | Select | Truck                | Elige entre 15+ iconos o ninguno |
+| **Título**      | Texto  | "Free Shipping"      | Título del badge                |
+| **Descripción** | Texto  | "On orders over $50" | Descripción del badge           |
 
 ## 📖 Instalación
 
@@ -186,11 +195,11 @@ Border Radius: 8px
 
 ## ⚡ Rendimiento
 
-- **Sin Dependencias Externas**: Todos los iconos son SVG inline (Heroicons)
+- **Sin Dependencias Externas**: Todos los iconos son SVG inline (Lucide Icons)
 - **CSS Mínimo**: ~2KB de estilos
 - **Carga Rápida**: No requiere JavaScript
 - **Amigable con SEO**: Estructura HTML semántica
-- **Iconos Modernos**: Heroicons profesionales para un look pulido
+- **Iconos Modernos**: Lucide Icons profesionales para un look elegante y refinado
 
 ## 🎨 Esquemas de Color
 
