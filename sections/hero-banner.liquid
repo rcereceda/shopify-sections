@@ -27,6 +27,13 @@
   assign text_alignment = section.settings.text_alignment
 -%}
 
+{%- liquid
+  assign text_shadow_class = ''
+  if section.settings.enable_text_shadow
+    assign text_shadow_class = 'has-text-shadow'
+  endif
+-%}
+
 <div class="hero-banner-section" style="
   --hero-height-mobile: {{ section.settings.height_mobile }}px;
   --hero-height-desktop: {{ section.settings.height_desktop }}px;
@@ -104,15 +111,15 @@
     <div class="hero-banner-content-wrapper hero-content-vertical-{{ content_position_vertical }} hero-content-horizontal-{{ content_position_horizontal }}">
       <div class="hero-banner-content hero-text-{{ text_alignment }}">
         {%- if section.settings.eyebrow != blank -%}
-          <p class="hero-eyebrow">{{ section.settings.eyebrow }}</p>
+          <p class="hero-eyebrow {{ text_shadow_class }}">{{ section.settings.eyebrow }}</p>
         {%- endif -%}
 
         {%- if section.settings.heading != blank -%}
-          <h1 class="hero-heading">{{ section.settings.heading }}</h1>
+          <h1 class="hero-heading {{ text_shadow_class }}">{{ section.settings.heading }}</h1>
         {%- endif -%}
 
         {%- if section.settings.subheading != blank -%}
-          <div class="hero-subheading">{{ section.settings.subheading }}</div>
+          <div class="hero-subheading {{ text_shadow_class }}">{{ section.settings.subheading }}</div>
         {%- endif -%}
 
         {%- comment -%} Buttons: Show if enabled AND has label AND link {%- endcomment -%}
@@ -280,6 +287,19 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    background-color: #f5f5f5;
+    transition: filter 0.3s ease;
+  }
+
+  /* Blur effect while loading (images and videos) */
+  .hero-banner-image:not(.loaded),
+  .hero-banner-video:not(.loaded) {
+    filter: blur(10px);
+  }
+
+  .hero-banner-image.loaded,
+  .hero-banner-video.loaded {
+    filter: blur(0);
   }
 
   /* Ambient Movement Effect - Subtle circular motion */
@@ -416,6 +436,19 @@
     line-height: 1.6;
     margin: 0 0 28px 0;
     opacity: 0.95;
+  }
+
+  /* Text Shadow (Optional) */
+  .has-text-shadow.hero-eyebrow {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .has-text-shadow.hero-heading {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .has-text-shadow.hero-subheading {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   }
 
   /* Buttons */
@@ -762,6 +795,13 @@
       "content": "Content"
     },
     {
+      "type": "checkbox",
+      "id": "enable_text_shadow",
+      "label": "Enable text shadow",
+      "info": "Adds subtle shadow to text for better readability over complex backgrounds",
+      "default": false
+    },
+    {
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow text",
@@ -1056,3 +1096,32 @@
   ]
 }
 {% endschema %}
+
+<script>
+  // Progressive loading with blur effect (images and videos)
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle images
+    const heroImages = document.querySelectorAll('.hero-banner-image');
+    heroImages.forEach(function(img) {
+      if (img.complete) {
+        img.classList.add('loaded');
+      } else {
+        img.addEventListener('load', function() {
+          img.classList.add('loaded');
+        });
+      }
+    });
+
+    // Handle videos
+    const heroVideos = document.querySelectorAll('.hero-banner-video');
+    heroVideos.forEach(function(video) {
+      if (video.readyState >= 3) { // HAVE_FUTURE_DATA or better
+        video.classList.add('loaded');
+      } else {
+        video.addEventListener('canplay', function() {
+          video.classList.add('loaded');
+        });
+      }
+    });
+  });
+</script>
