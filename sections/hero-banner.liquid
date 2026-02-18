@@ -1099,7 +1099,7 @@
 
 <script>
   // Progressive loading with blur effect (images and videos)
-  document.addEventListener('DOMContentLoaded', function() {
+  function initHeroBlurEffect() {
     // Handle images
     const heroImages = document.querySelectorAll('.hero-banner-image');
     heroImages.forEach(function(img) {
@@ -1123,5 +1123,11 @@
         });
       }
     });
-  });
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', initHeroBlurEffect);
+
+  // Run when section is reloaded in the Shopify editor
+  document.addEventListener('shopify:section:load', initHeroBlurEffect);
 </script>
