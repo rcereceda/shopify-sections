@@ -1,0 +1,63 @@
+---
+description: Atomic Sections project standards and conventions
+globs: **/*.liquid
+alwaysApply: false
+---
+
+# Atomic Sections Standards
+
+## Comments
+
+**Always use Liquid comments instead of HTML comments** for documentation headers and internal notes.
+
+### ✅ GOOD - Liquid Comments
+
+```liquid
+{%- comment -%}
+  Atomic Sections
+  https://atomicsections.com
+  License: MIT
+  
+  Hero Banner Section
+  
+  A full-width hero section with image or video background.
+  
+  Features:
+  - Image or video background
+  - Customizable overlay
+  - Flexible content positioning
+{%- endcomment -%}
+
+<div class="hero-section">
+  <!-- Content here -->
+</div>
+```
+
+### ❌ BAD - HTML Comments
+
+```liquid
+<!-- 
+  Atomic Sections
+  https://atomicsections.com
+  License: MIT
+  
+  Hero Banner Section
+-->
+
+<div class="hero-section">
+  <!-- Content here -->
+</div>
+```
+
+### Why Liquid Comments?
+
+1. **Not rendered in HTML**: Liquid comments don't appear in the final HTML, reducing page size
+2. **Better performance**: Less bytes transferred to the browser
+3. **Cleaner output**: No unnecessary comments in production HTML
+4. **Shopify best practice**: Recommended approach for Liquid theme documentation
+
+### When to use HTML comments
+
+Only use HTML comments (`<!-- -->`) when:
+- You need the comment visible in browser source for debugging
+- You're adding temporary notes during development that should be removed before production
