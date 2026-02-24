@@ -2,6 +2,7 @@
   Atomic Sections
   https://atomicsections.com
   License: MIT
+  Version: 1.0.1
   
   Testimonials Section
   
@@ -17,7 +18,7 @@
   - Optional company/role display
 {%- endcomment -%}
 
-<style>
+{%- style -%}
   #shopify-section-{{ section.id }} {
     background-color: {{ section.settings.background_color }};
     padding: {{ section.settings.padding_top_mobile }}px 20px {{ section.settings.padding_bottom_mobile }}px;
@@ -181,7 +182,7 @@
     height: 100%;
     fill: {{ section.settings.text_color }};
   }
-</style>
+{%- endstyle -%}
 
 <div class="testimonials-container-{{ section.id }}">
   {% if section.settings.heading != blank or section.settings.subheading != blank %}
@@ -267,7 +268,6 @@
 {% schema %}
 {
   "name": "Testimonials",
-  "version": "1.0.0",
   "tag": "section",
   "class": "section-testimonials",
   "settings": [

@@ -2,6 +2,7 @@
   Atomic Sections
   https://atomicsections.com
   License: MIT
+  Version: 1.0.1
   
   Featured Products Section
   
@@ -333,7 +334,7 @@
   </div>
 </div>
 
-<style>
+{%- style -%}
   .featured-products-section .product-card {
     cursor: pointer;
   }
@@ -382,12 +383,11 @@
       transform: translateY(0) !important;
     }
   }
-</style>
+{%- endstyle -%}
 
 {% schema %}
 {
   "name": "Featured Products",
-  "version": "1.0.0",
   "tag": "section",
   "class": "section-featured-products",
   "settings": [
