@@ -2,7 +2,7 @@
   Atomic Sections
   https://atomicsections.com
   License: MIT
-  Version: 1.1.0
+  Version: 1.1.1
   
   Hero Banner Section
   
@@ -253,9 +253,12 @@
     display: block;
   }
 
-  #shopify-section-{{ section.id }} .hero-banner-content,
-  #shopify-section-{{ section.id }} .hero-banner-content * {
+  #shopify-section-{{ section.id }} .hero-banner-content {
     color: {{ section.settings.text_color }};
+  }
+
+  #shopify-section-{{ section.id }} .hero-banner-content *:not(.hero-button) {
+    color: inherit;
   }
 {%- endstyle -%}
 
