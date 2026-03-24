@@ -264,9 +264,10 @@
 
 {% stylesheet %}
   .hero-banner-section {
-    position: relative;
     width: 100%;
-    overflow: hidden;
+    isolation: isolate;
+    position: relative;
+    z-index: 0;
   }
 
   .hero-banner-container {
@@ -274,6 +275,7 @@
     width: 100%;
     height: var(--hero-height-mobile);
     min-height: 400px;
+    overflow: hidden;
   }
 
   /* Background Media */
