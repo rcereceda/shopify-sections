@@ -229,7 +229,7 @@ Licencia MIT - Libre para usar en proyectos personales y comerciales.
 
 - **Para merchants:** Visita [atomicsections.com](https://atomicsections.com) para solicitar instalación profesional
 - **Para usuarios técnicos:** Revisa la documentación en `/docs` o abre un issue
-- **Para trabajo personalizado:** Contáctanos a través de [atomicsections.com](https://atomicsections.com)
+- **Escríbeme:** [rodrigo@atomicsections.com](mailto:rodrigo@atomicsections.com)
 
 ---
 
